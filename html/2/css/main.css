@@ -1,0 +1,120 @@
+body {
+	background: #f9f9f9;
+}
+
+.content {
+	width: 952px;
+	height: auto;
+	background: #fff;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	padding: 51px 46px; 
+}
+
+ul.top_menu {
+	background: #eee;
+	margin-top: 40px;
+	background-image: url(../img/gradient.png);
+	background-repeat: repeat-x; 
+
+}
+
+@font-face {
+	font-family: open_sans;
+	src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+}
+
+ul.top_menu li {
+	display: inline-block;
+	padding: 13px 0;
+	width: 120px;
+	color: #fff;
+	font-family: open_sans;
+	font-size: 14.67px;
+	text-align: center;
+}
+
+ul.top_menu li:hover {
+	background-image: url(../img/gradient_hover.png);
+	background-repeat: repeat-x;
+	cursor: pointer;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+	margin-left: -2px;
+}
+
+ul.sidebar_menu {
+	float: left;
+	height: 600px;
+}
+
+ul.sidebar_menu li {
+	border: 1px solid #c8c8c8;
+	padding: 13px 0;
+	width: 215px;
+	padding-left: 23px;
+	font-family: open_sans;
+	color: #656363;
+	font-size: 13.33px;
+
+}
+
+ul.sidebar_menu li:hover {
+	background: #f9f9f9;
+	padding-left: 35px;
+	cursor: pointer;
+	width: 203px;
+}
+
+.main_container img {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #c8c8c8;
+	padding: 40px 80px;
+    margin-top: 40px;
+    margin-right: 0;
+}
+
+p.text {
+	margin-left: 313px;
+    font-family: open_sans;
+    font-size: 13.33px;
+    color: #2c2c2c;
+    line-height: 21px;
+    margin-top: 41px;
+}
+
+
+ul.bottom_menu {
+	background: #eee;
+	margin-top: 40px;
+	background: #e1e1e1;
+
+}
+
+@font-face {
+	font-family: open_sans;
+	src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+}
+
+ul.bottom_menu li {
+	display: inline-block;
+	padding: 13px 0;
+	width: 120px;
+	color: #2c2c2c;
+	font-family: open_sans;
+	font-size: 13.33px;
+	text-align: center;
+}
+
+ul.bottom_menu li:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+ul li.copyright {
+	width: 218px;
+	float: right;
+}
