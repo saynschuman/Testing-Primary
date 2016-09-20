@@ -849,7 +849,9 @@ select {
 .navbar-nav > li {
     display: block;
     width: 100%;
-    text-align: right;
+    text-align: left;
+    position: relative;
+    z-index: 9999;
 }
 
 .navbar-nav {
