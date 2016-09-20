@@ -7,6 +7,8 @@
   <title>Интернет магазин</title>
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sidebar.css">
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -108,62 +110,221 @@
           <div class="of">Официальный представитель бытовой техники в Украине</div>
           <!-- navbar -->
           <div class="row">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="menu_wrapper">
-                <ul class="nav navbar-nav">
-                  <li><a href="#">контакты</a></li>
-                  <li><a href="#">оплата</a></li>
-                  <li><a href="#">гарантия и сервис</a></li>
-                  <li><a href="#">вопрос-ответ</a></li>
-                  <li><a href="#">новости и акции</a></li>
-                  <li><a href="#">статьи</a></li>
-                </ul>
-                <div class="shadow"></div>
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                 </div>
-                <div class="nav navbar-nav navbar-right">
-                <div class="basket">
-                  <a href="" class="basket_info data-openBasket shopping-cart-lnk">
-                    <span class="count data-basket-amount">0</span>&nbsp;
-                    <span>товаров на сумму</span>&nbsp;
-                    <span class="summ data-basketSumm">0</span>&nbsp;
-                    <span><span class="strong">грн.</span></span>
-                  </a>
-                  <div class="currency_selector custom_select">
-                    <select id="currencies_select">
-                      <option selected="selected">Гривна</option>
-                      <option>Доллар</option>
-                      <option>Евро</option>
-                    </select>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <div class="menu_wrapper">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">контакты</a></li>
+                      <li><a href="#">оплата</a></li>
+                      <li><a href="#">гарантия и сервис</a></li>
+                      <li><a href="#">вопрос-ответ</a></li>
+                      <li><a href="#">новости и акции</a></li>
+                      <li><a href="#">статьи</a></li>
+                    </ul>
+                    <div class="shadow"></div>
                   </div>
-                </div>                   
-                </div>
+                  <div class="nav navbar-nav navbar-right">
+                    <div class="basket">
+                      <a href="" class="basket_info data-openBasket shopping-cart-lnk">
+                        <span class="count data-basket-amount">0</span>&nbsp;
+                        <span>товаров на сумму</span>&nbsp;
+                        <span class="summ data-basketSumm">0</span>&nbsp;
+                        <span><span class="strong">грн.</span></span>
+                      </a>
+                      <div class="currency_selector custom_select">
+                        <select id="currencies_select">
+                          <option selected="selected">Гривна</option>
+                          <option>Доллар</option>
+                          <option>Евро</option>
+                        </select>
+                      </div>
+                    </div>                   
+                  </div>
 
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>          
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>          
           </div>
 
+          <div class="main">
+            <div class="row">
+              <div class="sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+                <div class="span-4 sidebar">
+                  <ul class="action">
+                    <li><a href="">Акционные комплекты<img src="img/star.png" width="45px" height="35px"></a></li>
+                  </ul>
+                  <ul class="toggle_sidebar">
+                    <li><a href="javascript:void(0)" onclick="$(&#39;.sidebar ul.sidebar&#39;).slideToggle();">Каталог товаров</a></li>
+                  </ul>
+
+                  <div class="sidebar">
+                    <ul id="navigation-menu" class="sidebar">
+                      <li data-submenu-id="submenu-1">
+                        <a href="">item - 1</a>
+                      </li>
+                      <li data-submenu-id="submenu-2">
+                        <a href="">item - 2</a>
+                      </li>
+                      <li data-submenu-id="submenu-3">
+                        <a href="">item - 3</a>
+                      </li>
+                      <li data-submenu-id="submenu-4">
+                        <a href="">item - 4</a>
+                      </li>
+                      <li data-submenu-id="submenu-5">
+                        <a href="">item - 5</a>
+                      </li>
+                      <li data-submenu-id="submenu-6">
+                        <a href="">item - 6</a>
+                      </li>
+                      <li data-submenu-id="submenu-7">
+                        <a href="">item - 7</a>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <!--brand_selector-->
+                  <div class="brand_selector ">
+                    <div class="custom_select">
+                      <select name="brand">
+                        <option>Выберите бренд</option>
+                        <option value="">Brand - 1</option>
+                        <option value="">Brand - 2</option>
+                        <option value="">Brand - 3</option>
+                        <option value="">Brand - 4</option>
+                        <option value="">Brand - 5</option>
+                        <option value="">Brand - 6</option>
+                        <option value="">Brand - 7</option>
+                      </select>
+                    </div>
+                  </div>
 
 
+
+                </div><!-- /.sidebar -->
+
+
+
+
+
+
+              </div>
+              <div class="main_content col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <article class="stext-bottom">
+                  <h2>Бытовая техника в интернет-магазине: всегда выгодные и удобные покупки</h2>
+                  <p>Многие сталкивались с ситуацией, когда посещая магазин бытовой техники, техника предлагаемая там, оказывалась необоснованно дорогой, да и желаемый товар не находился. А на поиски уходили силы и драгоценное время. Теперь, благодаря тому, что появился интернет-магазин электроники -&nbsp;бытовой техники 590.ua. все эти сложности остались в прошлом. Не нужно больше обегать множество торговых точек, пытаясь выявить наилучшее соотношение качества с ценой. При покупках через интернет-магазин бытовой техники, цены всегда будут радовать, как и предлагаемое качество с гарантией от производителя. Если вам требуется бытовая техника в г. Днепропетровск, Запорожье и всех других, вы всегда можете приобрести товар, воспользовавшись услугами доставки.</p>
+                  <h2>Преимущества покупок у нас</h2>
+                  <p>Выбирая магазин бытовой техники, купить в котором необходимый товар было бы наиболее просто и удобно, познакомьтесь с теми выгодами, что предлагаем своим клиентам мы:</p>
+                  <ul>
+                    <li>Вся продажа бытовой техники в интернет-магазине ведется напрямую от знаменитейших мировых производителей (Samsung, Zanussi, Electrolux и пр.). Предоставляется прямая гарантия, товар прошел сертификацию и полностью соответствует описаниям.</li>
+                    <li>Наш сайт, в отличии от других интернет-магазинов бытовой техники, способен предложить минимальные сроки доставки при любом местоположении заказчика.</li>
+                    <li>Какой бы товар из представленных, вам ни захотелось купить, интернет-магазин бытовой техники 590.ua наверняка представит его по наиболее доступным расценкам. Это возможно благодаря отсутствию необходимости оплачивать аренду, обширный штат сотрудников, масштабную рекламу.</li>
+                    <li>Также наш интернет-магазин бытовой техники (Украина) предлагает всегда новые товары – это происходит благодаря постоянным обновлениям, пополнениям.</li>
+                    <li>Онлайн-ресурсы превосходят обычные магазины бытовой техники в Украине благодаря большему количеству дополнительных удобств. Наш сайт предлагает воспользоваться функциями сравнения для оценки преимуществ приборов определенного типа. Детальные описания доступной к покупке через интернет бытовой техники, также можно почитать на нашем сайте.</li>
+                    <li>Даже в г. Киев магазины бытовой техники работают по графику – а вот заказать товар у нас можно, когда захочется вам, ведь ресурс работает круглосуточно. Также всегда можно получить необходимые консультации через интернет-магазин по бытовой технике.</li>
+                    <li>Города, в которых можно заказать товары через наш интернет-магазин бытовой техники: Киев, Винница, Кременчуг, Одесса, Харьков, Херсон, Черкассы – а также все иные населенные пункты в стране.</li>
+                  </ul>
+                  <h2>Выгодные онлайн-покупки</h2>
+                  <p>Наверняка вы уже оценили, что наиболее удобный способ, которым может быть приобретена бытовая техника - интернет магазин (в Запорожье находится клиент или Одессе, товар будет доставлен очень быстро). Также смогут оценить преимущества покупок через интернет-магазин бытовой техники и другие города, купленная он-лайн техника прибывает быстро, а радует владельцев долго. В каком уголке страны вы ни находились бы (Львов, Херсон, Днепропетровск) - интернет-магазин бытовой техники всегда предложит широкий выбор товаров и безукоризненный сервис.</p>
+                </article>
+                <div class="b-footer-seo">
+                  <div class="main_block im">
+                    <div xmlns:v="http://rdf.data-vocabulary.org/#">
+                      <span typeof="v:Breadcrumb">
+                        <a href="http://590.ua/" rel="v:url" property="v:title">Интернет магазин бытовой техники 590.ua</a> ››
+                      </span>
+                      <span typeof="v:Breadcrumb">
+                        <a href="http://590.ua/#Мелкая-бытовая-техника" rel="v:url" property="v:title">¥ Мелкая бытовая техника ¥</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+          <!-- footer -->
+
+
+          <div class="full_width_background">
+            <div class="main_block">
+
+              <div class="subfooter">
+                <div class="sitemap">
+                  <ul>
+                    <li><a href="http://590.ua/page/address">Контакты</a></li>
+                    <li><a href="http://590.ua/page/payment">Оплата</a></li>
+                    <li><a href="http://590.ua/page/delivery">Доставка</a></li>
+                  </ul><ul>
+                  <li><a href="http://590.ua/page/guarantee">Гарантия и сервис</a></li>
+                  <li class="test"><a href="http://590.ua/faq">Вопрос-ответ</a></li>
+                  <li class="test"><a href="http://590.ua/news">Новости и Акции</a></li>
+                  <li class="test"><a href="http://590.ua/articles">Статьи</a></li>
+                  <li><a href="http://590.ua/sitemap.html">Карта сайта</a></li>
+                </ul>
+              </div>
+
+              <div class="footer_contacts">
+                <div class="top_contacts" itemscope="" itemtype="http://schema.org/Organization">
+                  <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <img src="img//mark.png" width="14px" height="20px">
+                    <span>Адрес: <strong itemprop="streetAddress">ул. Дегтяревская 25а, корпус 1, секция №3, офис 413</strong>
+                     <strong itemprop="postalCode">04119</strong>, <strong itemprop="addressLocality">Украина</strong>,
+                     <strong itemprop="addressLocality">Киев</strong></span><br>
+                     <span>Телефон: <strong itemprop="telephone" class="ringo-phone">+38(044) 223-85-20</strong></span><br>
+                   </div>
+                 </div>
+                 <div class="bottom_contacts">
+                  <p>Если вы заметили неточность в описании, выделите текст и нажмите CTRL+ENTER</p>
+                  <p>Возможная ошибка будет оперативно исправлена</p>
+                  <p>Компания не несет ответсвенность за описание товара</p>
+                  <p class="currency-faq" id="currency-faq"><span class="strong"><span class="currency-faq-link">*</span> Цены в валюте указаны в качестве индикативных. Оплата товара производится в национальной валюте по курсу на день оплаты.</span></p>
+                </div>
+              </div>
+
+              <a class="pap_club" <a="" href="http://590.ua/#pap-club" data-toggle="modal">
+                <img src="img//pap_club.png" width="135px" height="31px" alt="">
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main_block main_block_footer">
+          <div class="span-16 footer">
+            <span itemprop="name">© Интернет-магазин бытовой техники <a href="http://590.ua/">590.ua</a> – продажа качественной бытовой техники наилучших брендов. Доставка, гарантия, бесплатное обслуживание</span>
+
+            <div class="social_links">
+              <a rel="nofollow" href="http://www.facebook.com/590.ua" target="_blank"><img src="img//fb.png" width="20px" height="20px" alt="fb"></a>
+              <a rel="nofollow" href="http://vk.com/ua590" target="_blank"><img src="img//vk.png" width="20px" height="20px" alt="vk"></a>
+              <a rel="nofollow" href="http://twitter.com/590Ua" target="_blank"><img src="img//twiter.png" width="20px" height="20px" alt="twitter"></a>
+              <a rel="nofollow" href="http://plus.google.com/101839783687775705263?rel=author"><img src="img//google.png" width="20px" height="20px" alt="google"></a>
+            </div>
+            <a href="http://hotline.ua/yp/4203/" target="_blank"><img src="img//hotline.png" width="102px" height="29px" alt="Информация об интернет-магазине 590.ua - hotline.ua"></a>
+          </div>
         </div>
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-      </body>
-      </html>
+
+      <div class="modal_dark"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
