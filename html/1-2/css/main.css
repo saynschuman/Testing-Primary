@@ -476,12 +476,14 @@ body .search-modal {
     .phones {
         font-size: 12px;
     }
-    .logo {
-        margin-top: 16px;
-    }    
+   
 }
 
 @media only screen and (max-width: 991px) {
+
+    .logo {
+        margin-top: 16px;
+    } 
     .logo_img img {
         width: 115px;
     }
@@ -523,6 +525,60 @@ body .search-modal {
     body {
         background-size: 6px;
     }
+.contacts {
+    width: 233px;
+    margin-top: 0;
+    position: absolute;
+    right: 20px;
+    top: 158px;
+}
+
+.middle, form.search input {
+    width: 100%;
+}
+
+a.logo_img {
+    width: 233px;
+    margin-top: 0;
+    position: absolute;
+    left: 20px;
+    top: 158px;
+}
+
+form.search {
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #97dbf6;
+    border-radius: 4px;
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 19px;
+}
+
+.middle .top {
+    width: 121px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+.logo_img img {
+    width: 78px;
+}
+}
+
+
+
+
+
+
+
 }
 
 
@@ -536,7 +592,19 @@ body .search-modal {
 
 
 
-@media only screen and (max-width: 532px) {
+@media only screen and (max-width: 547px) {
+.contacts {
+    top: 180px;
+}
+a.logo_img {
+    top: 180px;
+}
+
+
+.logo {
+    margin-top: 50px;
+}
+
 	.site_panel_left_side, .site_panel_right_side {
         float: none;
         width: 180px;
