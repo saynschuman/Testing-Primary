@@ -1567,13 +1567,12 @@ span.strong {
 
     @media only screen and (max-width: 320px) {
 
-        .sitemap ul {
+.sitemap ul {
     height: 100%;
     overflow: hidden;
     float: left;
-    padding-left: 0;
-    border-left: 0;
-    margin-right: 0px;
+    padding-left: 31px;
+    margin-right: -31px;
     margin-left: 0;
     list-style: none;
     width: 50%;
