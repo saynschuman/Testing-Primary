@@ -32,81 +32,134 @@
                 <img src="img/maestro.png" width="34px" height="12px" alt="visa">
                 <img src="img/master-card.png" width="34px" height="12px" alt="visa">
               </div>
-           </span>
+            </span>
           </div>    
         </div>
 
         <!-- logo_block -->
         <div class="row">
-  <div class="logo">
-    <a class="logo_img" href="index.html">
-      <img src="img/logo.png">
-    </a>
-    <div class="middle">
-      <div class="top">
-        <div class="social_links">
-          <a rel="nofollow" href="http://www.facebook.com/590.ua" target="_blank">
-            <img src="img/fb.png" width="20px" height="20px" alt="fb">
-          </a>
-          <a rel="nofollow" href="http://vk.com/ua590" target="_blank">
-            <img src="img/vk.png" width="20px" height="20px" alt="vk">
-          </a>
-          <a rel="nofollow" href="http://twitter.com/590Ua" target="_blank">
-            <img src="img/twiter.png" width="20px" height="20px" alt="twitter">
-          </a>
-          <a rel="nofollow" href="http://plus.google.com/101839783687775705263?rel=author">
-            <img src="img/google.png" width="20px" height="20px" alt="google"></a>
+          <div class="logo">
+            <a class="logo_img" href="index.html">
+              <img src="img/logo.png">
+            </a>
+            <div class="middle">
+              <div class="top">
+                <div class="social_links">
+                  <a rel="nofollow" href="http://www.facebook.com/590.ua" target="_blank">
+                    <img src="img/fb.png" width="20px" height="20px" alt="fb">
+                  </a>
+                  <a rel="nofollow" href="http://vk.com/ua590" target="_blank">
+                    <img src="img/vk.png" width="20px" height="20px" alt="vk">
+                  </a>
+                  <a rel="nofollow" href="http://twitter.com/590Ua" target="_blank">
+                    <img src="img/twiter.png" width="20px" height="20px" alt="twitter">
+                  </a>
+                  <a rel="nofollow" href="http://plus.google.com/101839783687775705263?rel=author">
+                    <img src="img/google.png" width="20px" height="20px" alt="google"></a>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <form action="" method="post" name="searchForm" class="search">
+                    <div class="penta"></div>
+                    <input autocomplete="off" type="text" placeholder="Поиск..." id="searchtext" name="searchtext">
+                    <button type="submit" class="button_v1">Найти</button>
+                  </form>
+                </div>
+              </div>
+              <div class="contacts cities">
+                <div class="region-choose">
+                  <div class="btn-group">
+                    <span class="btn btn-mini city-button " data-toggle="dropdown">
+                      <span class="data-current-city">Киев
+                        <i class="caret"></i>
+                      </span>
+                    </span>
+                    <ul class="dropdown-menu data-region-list">
+                      <li><a href="" id="region_6" data-phone="(0432) 57-27-77; (067) 262-43-43" onclick="selectRegion(6)">Винница</a></li>
+                      <li><a href="" id="region_2" data-phone="(056) 788-71-71, (095) 270-50-71" onclick="selectRegion(2)">Днепропетровск</a></li>
+                      <li><a href="" id="region_12" data-phone="(062) 207-46-90;  (050) 444-68-25" onclick="selectRegion(12)">Донецк</a></li>
+                      <li><a href="" id="region_9" data-phone="(061) 701 19 60;  (098) 867-13-92" onclick="selectRegion(9)">Запорожье</a></li>
+                      <li><a href="" id="region_1" data-phone="(044) 223-85-20; (050) 590-0-590; (067) 803-17-54" onclick="selectRegion(1)">Киев</a></li>
+                      <li><a href="" id="region_5" data-phone="(0522) 59-50-39;  (066) 520-80-66" onclick="selectRegion(5)">Кировоград</a></li>
+                      <li><a href="" id="region_17" data-phone="(0536) 78-20-39;  (066) 957-05-11" onclick="selectRegion(17)">Кременчуг</a></li>
+                      <li><a href="" id="region_13" data-phone="(056) 443-50-39;  (098) 786-42-86" onclick="selectRegion(13)">Кривой Рог</a></li>
+                      <li><a href="" id="region_4" data-phone="(032) 247-04-09; (067) 434-68-00" onclick="selectRegion(4)">Львов</a></li>
+                      <li><a href="" id="region_21" data-phone="(093) 929-46-37" onclick="selectRegion(21)">Мариуполь</a></li>
+                      <li><a href="" id="region_20" data-phone="(0552) 44-12-87" onclick="selectRegion(20)">Николаев</a></li>
+                      <li><a href="" id="region_7" data-phone="(048) 702-56-84;  (050) 333-41-33" onclick="selectRegion(7)">Одесса</a></li>
+                      <li><a href="" id="region_3" data-phone="(057) 762-60-33;  (050) 443-61-43" onclick="selectRegion(3)">Харьков</a></li>
+                      <li><a href="" id="region_22" data-phone="(0552) 44-12-87" onclick="selectRegion(22)">Херсон</a></li>
+                      <li><a href="" id="region_19" data-phone="(0472) 51-15-39; (098) 786-42-86" onclick="selectRegion(19)">Черкассы</a></li>
+                    </ul>
+                  </div>
+                  <div class="phones">
+                    <span class="data-phones ringo-phone">
+                      <span>(044) 223-85-20; (050) 590-0-590; (067) 803-17-54</span>
+                    </span>
+                  </div>
+                  <div class="days">
+                    <p>пн - чт: 9:30 - 18:00, пт-вс: 10:00 - 18:00</p>
+                    <p class="work-time__region hide">пн - пт: 9:00 - 18:00, сб, вс: выходной</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="bottom">
-          <form action="" method="post" name="searchForm" class="search">
-            <div class="penta"></div>
-            <input autocomplete="off" type="text" placeholder="Поиск..." id="searchtext" name="searchtext">
-            <button type="submit" class="button_v1">Найти</button>
-          </form>
-        </div>
-      </div>
-      <div class="contacts cities">
-        <div class="region-choose">
-          <div class="btn-group">
-            <span class="btn btn-mini city-button " data-toggle="dropdown">
-              <span class="data-current-city">Киев
-                <i class="caret"></i>
-              </span>
-            </span>
-            <ul class="dropdown-menu data-region-list">
-              <li><a href="" id="region_6" data-phone="(0432) 57-27-77; (067) 262-43-43" onclick="selectRegion(6)">Винница</a></li>
-              <li><a href="" id="region_2" data-phone="(056) 788-71-71, (095) 270-50-71" onclick="selectRegion(2)">Днепропетровск</a></li>
-              <li><a href="" id="region_12" data-phone="(062) 207-46-90;  (050) 444-68-25" onclick="selectRegion(12)">Донецк</a></li>
-              <li><a href="" id="region_9" data-phone="(061) 701 19 60;  (098) 867-13-92" onclick="selectRegion(9)">Запорожье</a></li>
-              <li><a href="" id="region_1" data-phone="(044) 223-85-20; (050) 590-0-590; (067) 803-17-54" onclick="selectRegion(1)">Киев</a></li>
-              <li><a href="" id="region_5" data-phone="(0522) 59-50-39;  (066) 520-80-66" onclick="selectRegion(5)">Кировоград</a></li>
-              <li><a href="" id="region_17" data-phone="(0536) 78-20-39;  (066) 957-05-11" onclick="selectRegion(17)">Кременчуг</a></li>
-              <li><a href="" id="region_13" data-phone="(056) 443-50-39;  (098) 786-42-86" onclick="selectRegion(13)">Кривой Рог</a></li>
-              <li><a href="" id="region_4" data-phone="(032) 247-04-09; (067) 434-68-00" onclick="selectRegion(4)">Львов</a></li>
-              <li><a href="" id="region_21" data-phone="(093) 929-46-37" onclick="selectRegion(21)">Мариуполь</a></li>
-              <li><a href="" id="region_20" data-phone="(0552) 44-12-87" onclick="selectRegion(20)">Николаев</a></li>
-              <li><a href="" id="region_7" data-phone="(048) 702-56-84;  (050) 333-41-33" onclick="selectRegion(7)">Одесса</a></li>
-              <li><a href="" id="region_3" data-phone="(057) 762-60-33;  (050) 443-61-43" onclick="selectRegion(3)">Харьков</a></li>
-              <li><a href="" id="region_22" data-phone="(0552) 44-12-87" onclick="selectRegion(22)">Херсон</a></li>
-              <li><a href="" id="region_19" data-phone="(0472) 51-15-39; (098) 786-42-86" onclick="selectRegion(19)">Черкассы</a></li>
-            </ul>
-          </div>
-          <div class="phones">
-            <span class="data-phones ringo-phone">
-              <span>(044) 223-85-20; (050) 590-0-590; (067) 803-17-54</span>
-            </span>
-          </div>
-          <div class="days">
-            <p>пн - чт: 9:30 - 18:00, пт-вс: 10:00 - 18:00</p>
-            <p class="work-time__region hide">пн - пт: 9:00 - 18:00, сб, вс: выходной</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="of">Официальный представитель бытовой техники в Украине</div>
+          <!-- navbar -->
+          <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
 
-      </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu_wrapper">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">контакты</a></li>
+                  <li><a href="#">оплата</a></li>
+                  <li><a href="#">гарантия и сервис</a></li>
+                  <li><a href="#">вопрос-ответ</a></li>
+                  <li><a href="#">новости и акции</a></li>
+                  <li><a href="#">статьи</a></li>
+                </ul>
+                <div class="shadow"></div>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                <div class="basket">
+                  <a href="" class="basket_info data-openBasket shopping-cart-lnk">
+                    <span class="count data-basket-amount">0</span>&nbsp;
+                    <span>товаров на сумму</span>&nbsp;
+                    <span class="summ data-basketSumm">0</span>&nbsp;
+                    <span><span class="strong">грн.</span></span>
+                  </a>
+                  <div class="currency_selector custom_select">
+                    <select id="currencies_select">
+                      <option selected="selected">Гривна</option>
+                      <option>Доллар</option>
+                      <option>Евро</option>
+                    </select>
+                  </div>
+                </div>                   
+                </ul>
+
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>          
+          </div>
+
+
+
+        </div>
 
 
 
