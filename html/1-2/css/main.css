@@ -529,7 +529,7 @@ body .search-modal {
     width: 233px;
     margin-top: 0;
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 158px;
 }
 
@@ -537,12 +537,16 @@ body .search-modal {
     width: 100%;
 }
 
+.logo_img img {
+    width: 100px;
+}
+
 a.logo_img {
-    width: 233px;
+    width: 190px;
     margin-top: 0;
     position: absolute;
     left: 20px;
-    top: 158px;
+    top: 52px;
 }
 
 form.search {
@@ -559,18 +563,17 @@ form.search {
 
 .middle .top {
     width: 121px;
-    height: 20px;
+    height: 40px;
     line-height: 20px;
     margin-bottom: 14px;
     display: block;
     margin: 0 auto;
+    float: right;
 }
 
 
 @media only screen and (max-width: 480px) {
-.logo_img img {
-    width: 78px;
-}
+
 }
 
 
@@ -593,13 +596,13 @@ form.search {
 
 
 @media only screen and (max-width: 547px) {
+a.logo_img {
+    top: 86px;
+}
+
 .contacts {
     top: 180px;
 }
-a.logo_img {
-    top: 180px;
-}
-
 
 .logo {
     margin-top: 50px;
