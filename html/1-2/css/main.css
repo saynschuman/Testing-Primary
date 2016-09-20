@@ -124,6 +124,7 @@ a.logo_img {
     position: relative;
     font-size: 0;
     white-space: nowrap;
+    z-index: 99999;
 }
 
 .phones {
@@ -980,13 +981,13 @@ select {
 
 
 
-@media only screen and (max-width: 547px) {
+@media only screen and (max-width: 577px) {
     a.logo_img {
         top: 86px;
     }
 
     .contacts {
-        top: 180px;
+        top: 194px;
     }
 
     .logo {
@@ -1020,12 +1021,38 @@ select {
 
 }
 
+@media only screen and (max-width: 480px) {
+.of {
+    margin-left: 0;
+}
+
+
+
+
+
+
+}
+
 @media only screen and (max-width: 350px) {
+
+    .phones * {
+    font-weight: bold;
+    margin-left: -9px;
+    font-size: 9px;
+}
+
+.days, .days p {
+    margin-left: -9px;
+    font-size: 9px;
+}
 	.site_panel_right_side {
        float: none;
        margin: 0 auto;
        width: 315px;
        display: block;
-       margin-left: -14px;
+       margin-left: -36px;
    }
+   .of {
+    font-size: 10px;
+}
 }
