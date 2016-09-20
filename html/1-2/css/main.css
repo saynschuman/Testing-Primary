@@ -453,8 +453,74 @@ body .search-modal {
     font-weight: bold;
 }
 
+.logo_img img {
+    width: 177px;
+}
 
+@media only screen and (max-width: 1250px) {
+    .phones {
+        font-size: 15px;
+    }    
+}
 
+@media only screen and (max-width: 1200px) {
+    .middle,
+    form.search input {
+        width: 410px;
+    }
+
+    .contacts {
+        width: 306px;
+    }
+
+    .phones {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .logo_img img {
+        width: 115px;
+    }
+
+    .middle {
+        width: 550px;
+        height: 100%;
+        float: left;
+        margin-top: -17px;
+    }
+
+    .middle,
+    form.search input {
+        width: 350px;
+    }
+
+    .contacts {
+        width: 359px;
+        margin-top: -20px;
+        margin-left: 18px;
+    }
+
+    .days, .days p {
+        font-size: 10px;
+        color: #707070;
+    }
+
+    .phones {
+        font-size: 10px;
+    }
+
+    body .region-choose .city-button {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    body {
+        background-size: 6px;
+    }
+}
 
 
 
@@ -469,38 +535,38 @@ body .search-modal {
 
 @media only screen and (max-width: 532px) {
 	.site_panel_left_side, .site_panel_right_side {
-    float: none;
-    width: 180px;
-    text-align: center;
-    margin: 0 auto;
-}
+        float: none;
+        width: 180px;
+        text-align: center;
+        margin: 0 auto;
+    }
 
-.site_panel_right_side {
-    float: none;
-    margin: 0 auto;
-    width: 315px;
-    display: block;
-}
+    .site_panel_right_side {
+        float: none;
+        margin: 0 auto;
+        width: 315px;
+        display: block;
+    }
 
-.right_side_top {
-	display: block;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 16px;
-}
+    .right_side_top {
+     display: block;
+     width: 100%;
+     margin: 0 auto;
+     margin-top: 16px;
+ }
 
-.site_panel_right_side span.accept {
-	margin: 0;
-}
+ .site_panel_right_side span.accept {
+     margin: 0;
+ }
 
 }
 
 @media only screen and (max-width: 350px) {
 	.site_panel_right_side {
-	    float: none;
-	    margin: 0 auto;
-	    width: 315px;
-	    display: block;
-	    margin-left: -14px;
-	}
+     float: none;
+     margin: 0 auto;
+     width: 315px;
+     display: block;
+     margin-left: -14px;
+ }
 }
