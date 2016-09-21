@@ -1,0 +1,110 @@
+.billboard {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.billboard .img-large {
+    width: 100%;
+    height: 300px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0
+}
+
+.billboard .current {
+    z-index: 2
+}
+
+.billboard .img-large img {
+    width: 100%;
+    height: 300px
+}
+
+.billboard-control__left,
+.billboard-control__right {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer
+}
+
+.billboard-control__left:hover,
+.billboard-control__right:hover {
+    opacity: .7
+}
+
+.billboard-control__left {
+    left: 0;
+    height: 57px;
+    bottom: 24px;
+    background: url(../img/billboard-control__left.gif) 50% 50%;
+    width: 15px
+}
+
+.billboard-control__right {
+    right: 0;
+    height: 57px;
+    width: 15px;
+    background: url(../img/billboard-control__right.gif) 50% 50%;
+    bottom: 24px
+}
+
+.billboard .img-small {
+    width: 880px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+    overflow: hidden
+}
+
+.billboard li {
+    width: 160px;
+    height: 60px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    margin-right: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.billboard .active img {
+    opacity: .4;
+    filter: alpha(opacity=40)
+}
+
+.billboard li span {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #fff;
+    font-size: 12px;
+    z-index: 100;
+    text-shadow: 1px -1px 1px #000
+}
+
+.billboard .active {
+    border: 2px solid #fab130
+}
+
+.billboard li img {
+    max-width: 160px;
+    position: absolute;
+    top: -100px;
+    bottom: -100px;
+    margin: auto;
+    right: -100px;
+    left: -100px;
+    z-index: 1
+}
