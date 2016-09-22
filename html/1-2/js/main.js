@@ -1,4 +1,14 @@
  jQuery(document).ready(function ($) {
+ 			
+
+ $('.toggle_button').click(function(){
+  $('ul.mobile').slideToggle();
+});
+
+ $('.cat_click').click(function(){
+  $('ul.sidebar').slideToggle();
+});
+
             
             var jssor_1_options = {
               $AutoPlay: true,
@@ -35,8 +45,3 @@
             //responsive code end
         });
 
-
-
- $('.toggle_button').click(function(){
-  $('ul.mobile').slideToggle();
-});
