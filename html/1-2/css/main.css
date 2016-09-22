@@ -5,6 +5,8 @@ html, body {
     height: 100%;
 }
 
+
+
 body {
 	margin: 0;
     font: 12px Arial,Helvetica,sans-serif;
@@ -1911,6 +1913,7 @@ span.strong {
         list-style: none;
         border-radius: 4px;
         margin-bottom: 0px;
+        margin-top: 15px;
     }
 
     .mobile > ul {
@@ -2184,16 +2187,18 @@ span.strong {
         margin-bottom: -10px;
     }        
 
-    .toggle_button {
-        height: 37px;
-        width: 100%;
-        background: url(../img/toggle_mobile_menu.png);
-        float: none;
-        background-repeat: no-repeat;
-        background-position: right;
-        transition: .5s;
-        position: relative;
-    }
+.toggle_button {
+    height: 37px;
+    width: 12%;
+    background: url(../img/toggle_mobile_menu.png);
+    float: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: .5s;
+    position: absolute;
+    top: -104px;
+    right: 10px;
+}
 
     .toggle_button:hover,
     .toggle_button:active {
@@ -2476,6 +2481,13 @@ span.strong {
 
     @media only screen and (max-width: 767px) {
 
+        .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
         #jssor_1,
         .product_box {
             display: none;
@@ -2543,14 +2555,14 @@ span.strong {
             right: 0;
         }
 
-        .of {
-            margin-left: 0;
-            position: absolute;
-            top: 5%;
-            right: 7%;
-            font-size: 10px;
-            width: 50%;
-        }
+.of {
+    margin-left: 0;
+    position: absolute;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    top: 70px;
+}
         .navbar-default .navbar-toggle {
             margin-top: 10px;
         }
@@ -2649,7 +2661,7 @@ span.strong {
             width: 190px;
             margin-top: 0;
             position: absolute;
-            left: 30px;
+            left: 15px;
             top: 15px;
         }
 
@@ -2662,7 +2674,7 @@ span.strong {
             display: block;
             width: 95%;
             margin: 0 auto;
-            margin-top: 19px;
+            margin-top: 35px;
         }
 
         .middle .top {
@@ -2715,17 +2727,17 @@ span.strong {
      @media only screen and (max-width: 480px) {
 
 
-        form.search {
-            position: relative;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #97dbf6;
-            border-radius: 4px;
-            display: block;
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 19px;
-        }
+form.search {
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #97dbf6;
+    border-radius: 4px;
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 42px;
+}
 
 
 
