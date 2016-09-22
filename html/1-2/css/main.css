@@ -2241,12 +2241,6 @@ span.strong {
     right: 10px;
 }
 
-    .toggle_button:hover,
-    .toggle_button:active {
-        transition: .5s;
-        opacity: .6;
-        cursor: pointer;
-    }
 
     /*jssor slider*/
 
