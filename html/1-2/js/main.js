@@ -1,5 +1,5 @@
  jQuery(document).ready(function ($) {
- 			
+
 
  $('.toggle_button').click(function(){
   $('ul.mobile').slideToggle();
@@ -25,13 +25,14 @@
             };
             
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var mainContentWidth = $('.main_content').width();
             
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizing
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 600);
+                    refSize = Math.min(refSize, mainContentWidth);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
