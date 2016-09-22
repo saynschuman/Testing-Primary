@@ -725,6 +725,9 @@ select {
     display: none;
 }
 
+
+
+
 /*sidebar*/
 
 
@@ -1199,6 +1202,29 @@ span.strong {
     padding-left: 0;
     margin-bottom: 20px;
 }
+
+/*good list*/
+
+.mobile_good_list {
+    display: none;
+}
+
+.good {
+    height: 85px;
+}
+
+.good_descr {
+    width: 70%;
+    float: left;
+}
+
+.good img {
+    margin-right: 2%;
+    width: 28%;
+    float: left;
+    min-width: 100px;
+}
+
 
 
 
@@ -2481,6 +2507,10 @@ span.strong {
 
     @media only screen and (max-width: 767px) {
 
+        .mobile_good_list {
+            display: block;
+        }
+
         .container {
     padding-right: 0;
     padding-left: 0;
@@ -2738,10 +2768,32 @@ form.search {
     margin: 0 auto;
     margin-top: 42px;
 }
+   }
 
+     @media only screen and (max-width: 400px) {
 
-
+    .good {
+        height: auto;
+        margin-bottom: 20px;
     }
+
+    .good_descr {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .good img {
+        margin-right: 0;
+        width: 100%;
+        float: left;
+        min-width: 100px;
+        margin-bottom: 5px;
+    }
+
+}
+
+ 
 
     @media only screen and (max-width: 350px) {
 
