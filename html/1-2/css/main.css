@@ -39,6 +39,10 @@ textarea {
 	margin-bottom: 23px;
 }
 
+.bottom_panel {
+    display: none;
+}
+
 .site_panel_left_side, .site_panel_right_side {
     float: left;
     display: -webkit-box;
@@ -48,6 +52,15 @@ textarea {
     display: flex;
     height: 100%;
     -webkit-box-flex: 1;
+}
+
+.more_inf {
+    display: none;
+}
+
+.show_more {
+    color: #0093dd;
+    cursor: pointer;
 }
 
 .site_panel_right_side {
@@ -2506,6 +2519,10 @@ span.strong {
 
 
     @media only screen and (max-width: 767px) {
+
+        .bottom_panel {
+    display: block;
+}
 
         .mobile_good_list {
             display: block;

@@ -9,6 +9,11 @@
   $('ul.sidebar').slideToggle();
 });
 
+ $('.show_more').click(function(){
+ 	$('.more_inf').slideToggle();
+ });
+
+
             
             var jssor_1_options = {
               $AutoPlay: true,
