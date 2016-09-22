@@ -33,10 +33,10 @@
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
-
-
-$('.right_arrow').click(function(){
-	$('.products_container_wrapper').css('transform', "translateX(-4.5);")	
-})
-
         });
+
+
+
+ $('.toggle_button').click(function(){
+  $('ul.mobile').slideToggle();
+});

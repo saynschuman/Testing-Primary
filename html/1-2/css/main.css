@@ -2180,6 +2180,24 @@ span.strong {
         margin-bottom: -10px;
     }        
 
+.toggle_button {
+    height: 37px;
+    width: 100%;
+    background: url(../img/toggle_mobile_menu.png);
+    float: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: .5s;
+    position: relative;
+}
+
+.toggle_button:hover,
+.toggle_button:active {
+    transition: .5s;
+    opacity: .6;
+    cursor: pointer;
+}
+
     /*jssor slider*/
 
     .jssora02l, .jssora02r {

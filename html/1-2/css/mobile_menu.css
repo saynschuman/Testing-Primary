@@ -145,7 +145,7 @@ select {
 }
 
 input[type=checkbox],ul.mobile {
-    display: none
+    /*display: none*/
 }
 
 .toggle_mobile a {
