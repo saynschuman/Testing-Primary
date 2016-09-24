@@ -1,0 +1,134 @@
+
+
+/* System inner styles */
+
+.panel-info {
+    border:0px;
+    background:transparent !important;
+}
+
+.panel-heading {
+    background:rgba(100,187,211,.9) !important;
+    border:0px;
+    color:#fff !important;
+    padding:15px;
+}
+
+.panel-body {
+    background:rgba(100,187,211,.6);
+    font-size:14px;
+}
+
+.form-control {
+    background: transparent;
+    color: #fff;
+    border: 1px #fff solid;
+}
+
+.modal-content {
+    color: #333333 !important;
+}
+
+.modal-backdrop {
+    z-index:100000;
+}
+
+.modal {
+    z-index:110000;
+}
+
+.modal-content, .sweet-alert {
+    background:url('/img/modal-background.png');
+    background-size:cover;
+    color:#fff !important;
+    opacity:0.95;
+    z-index:110000;
+}
+
+.sweet-alert {
+    z-index:260000 !important;
+}
+
+.sweet-overlay {
+    z-index:250000 !important;
+}
+
+.sweet-alert h2, .sweet-alert p {
+    color:#fff !important;
+}
+
+.sa-icon {
+    display:none !important;
+}
+
+.modal-content a {
+    color:#fff;
+}
+
+.modal-content a:hover {
+    color:#ddd;
+}
+
+input.form-control::-webkit-input-placeholder {
+    color:#ddd !important;
+}
+
+input.form-control::-moz-placeholder {
+    color:#ddd !important;
+}
+
+.modal-button, .sa-confirm-button-container button {
+    border: 1px solid #fff !important;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    background:transparent;
+}
+
+.sa-confirm-button-container button {
+    margin-top:20px;
+    background:transparent !important;
+    width:120px !important;
+}
+
+#line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.invest {
+    background: rgba(100,187,211,.6);
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom:5px;
+    padding-top:15px;
+}
+
+.timer {
+    margin-bottom: 10px !important; /*man*/
+}
+
+.deposit {
+    min-height: 360px !important;
+    height:auto !important;
+}
+
+.timer_sub tr {
+    text-align:right !important;
+}
+
+.structure_person_name_2_bl {
+    width:auto !important;
+    max-width:130px;
+}
+
+select:focus {
+    color:#000 !important;
+}
