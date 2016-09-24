@@ -1,6 +1,8 @@
  jQuery(document).ready(function ($) {
 
 
+
+
  $('.toggle_button').click(function(){
   $('ul.mobile').slideToggle();
 });
@@ -51,3 +53,8 @@
             //responsive code end
         });
 
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        navigation : true
+      });
+    });

@@ -61,6 +61,7 @@ textarea {
 .show_more {
     color: #0093dd;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .site_panel_right_side {
@@ -1290,6 +1291,33 @@ span.strong {
 
 }
 
+/*carousel*/
+
+  #owl-demo .item{
+    height: 300px;
+    
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 15px 5px;
+    position: relative;
+    /*float: left;*/
+    margin: 0 8px;
+
+}
+
+
+#owl-demo .item:hover{
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(255, 108, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(255, 108, 0, 0.5);
+    box-shadow: 0px 0px 5px 2px rgba(255, 108, 0, 0.5);
+    text-decoration: none;
+
+}
+
+.owl-pagination {
+    display: none;
+}
+
 .product_icon {
     height: 315px;
     width: 4.83%;
@@ -2352,14 +2380,6 @@ span.strong {
 
 
 
-
-
-
-
-
-
-
-
     @media only screen and (max-width: 1330px) {
         .phones {
             font-size: 15px;
@@ -2513,8 +2533,63 @@ span.strong {
 
     }
 
+       
+
 
     @media only screen and (max-width: 767px) {
+
+        .one_item_gift {
+            right: 25px;
+        }
+
+        .products_container_image_wrap img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 195px;
+    max-height: 240px;
+    margin: auto;
+}
+
+        #owl-demo .item {
+    height: auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 15px 5px;
+    position: relative;
+    /* float: left; */
+    margin: 15px 8px;
+}
+
+
+        .stext-bottom ul {
+    display: block;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin: 1em 0;
+    padding: 0px 10px 0 20px;
+}
+
+
+.bread {
+   display: block;
+    margin: 0px 10px;
+}
+
+        .stext-bottom p {
+    display: block;
+    margin: 1em 10px;
+    text-align: justify;
+}
+
+.stext-bottom h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.83em 10px 0;
+}
 
         .bottom_panel {
     display: block;
@@ -2727,6 +2802,14 @@ span.strong {
         .social_links {
             margin-right: 0;
         }
+
+
+
+
+
+
+
+            }
 
         @media only screen and (max-width: 655px) {
             .main_block_footer {

@@ -136,8 +136,8 @@
 .one_item_gift {
 /*    right: -50px; */
 	display: block;
-	margin-top: 40px;
-	margin-left: 60px;
+	margin-top: -236px;
+	margin-left: 69px;
     background: #f7951e;
     background: -moz-linear-gradient(top,#f7951e 40%,#f7a71e 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(40%,#f7951e),color-stop(100%,#f7a71e));
@@ -1065,7 +1065,7 @@
     position: relative;
     top: 2px;
     left: -1px;
-    background: url(/assets/media/one_item_cart.png) no-repeat 0% 0%
+    background: url(../img/one_item_cart.png) no-repeat 0% 0%
 }
 
 .compare_buy_button {
