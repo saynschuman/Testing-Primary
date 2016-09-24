@@ -2265,7 +2265,7 @@ span.strong {
     background-position: right;
     transition: .5s;
     position: absolute;
-    top: -104px;
+    top: 0px;
     right: 10px;
 }
 
@@ -2537,6 +2537,20 @@ span.strong {
 
 
     @media only screen and (max-width: 767px) {
+
+        .mobile {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    position: absolute;
+    width: 98.5%;
+    z-index: 999;
+    top: 11px;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    right: 0;
+}
 
         .one_item_gift {
             right: 25px;
