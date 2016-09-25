@@ -727,6 +727,7 @@ select {
 
 .main {
     transition: .5s;
+    margin-top: -15px;
 }
 
 .modal_dark {
@@ -2386,8 +2387,16 @@ span.strong {
 
 
 
+.breadcumbs * {
+    font: 11px Arial !important;
+    color: #969696 !important;
+    text-decoration: none !important;
+}
 
-
+.breadcumbs {
+    display: block;
+    /*margin-bottom: 30px;*/
+}
 
 
 
@@ -2445,6 +2454,10 @@ span.strong {
     }
 
     @media only screen and (max-width: 991px) {
+
+                .breadcumbs * {
+display: none;
+}
         .basket_info {
             height: 50px;
             line-height: 50px;
@@ -2621,6 +2634,8 @@ span.strong {
 
 
     @media only screen and (max-width: 767px) {
+
+
 
         .bbb {
             display: block;

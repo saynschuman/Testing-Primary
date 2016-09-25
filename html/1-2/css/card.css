@@ -1,4 +1,4 @@
-﻿.clear {
+.clear {
     clear: both
 }
 
@@ -36,7 +36,7 @@
 }
 
 .one_item_right {
-    width: 525px;
+    width: 50%;
 }
 
 .one_item_img_block {
@@ -135,10 +135,10 @@
 }
 
 .one_item_gift {
-/*    right: -50px; */
+	position: relative;
 	display: block;
-	margin-top: -236px;
-	margin-left: 69px;
+	margin: 0 auto;
+	margin-top: 40px;
     background: #f7951e;
     background: -moz-linear-gradient(top,#f7951e 40%,#f7a71e 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(40%,#f7951e),color-stop(100%,#f7a71e));
@@ -149,7 +149,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7951e', endColorstr='#f7a71e',GradientType=0 );
     z-index: 30;
     height: 100px;
-/*    top: 10px; */
     -webkit-box-shadow: 0 0 4px 0 rgba(50,50,50,.55);
     -moz-box-shadow: 0 0 4px 0 rgba(50,50,50,.55);
     box-shadow: 0 0 4px 0 rgba(50,50,50,.55)
@@ -157,6 +156,10 @@
 
 .holder_catalog_item .one_item_gift {
     cursor: default!important
+}
+
+.defaultCountdown .is-countdown {
+	width: 12px !important;
 }
 
 .one_item_gift .one_item_gift_img {
@@ -245,7 +248,7 @@
 .one_item_price_block {
     float: right;
     display: inline-block;
-    width: 264px;
+    width: 50%;
     padding: 15px 13px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
@@ -297,11 +300,12 @@
 }
 
 .one_item_price {
-    float: right;
+    float: left;
     font-family: roboto-condensedregular;
-    color: #ff6c00;
-    font-size: 22px;
-    margin-top: 7px
+    color: #31a2ce!important;
+    font-size: 36px;
+    margin-top: 7px;
+    margin-bottom: 10px;
 }
 
 .one_item_price .prod_price {
@@ -481,8 +485,8 @@
 .one_item_sale_block {
     padding: 15px 9px 15px 15px;
     background: #f1f7f9;
-    width: 242px;
-    height: 290px;
+    width: 50%;
+    height: auto;
 	float: left;
 }
 
@@ -544,14 +548,18 @@
     line-height: 16px;
     max-height: 48px;
     overflow: hidden;
-    color: #e80808
+    color: #e80808;
+    text-align: center;
 }
 
 .one_item_sale_down {
 	display: block;
-	float: left;
-	margin-right: 25px;
-	padding-top: 120px;
+	float: none;
+	margin: 0 auto;
+	/*margin-right: 25px;
+	padding-top: 120px;*/
+	text-align: center;
+	margin-top: 10px;
 }
 
 .one_item_additional_block {
