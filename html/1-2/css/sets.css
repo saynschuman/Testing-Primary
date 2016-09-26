@@ -35,7 +35,7 @@
 }
 
 .sale_complect_photo a, .sale_complect_title {
-    display: block;
+    display: flex;
     text-align: center;
     width: 100%;
 }
