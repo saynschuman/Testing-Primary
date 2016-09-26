@@ -1198,6 +1198,10 @@ h2 {
 
 
 @media only screen and (max-width: 767px)  {
+
+    .act_tit img {
+        display: none;
+    }
     .tit h1 {
         font-size: 20px;
     }
