@@ -962,6 +962,20 @@ ul.strange_marker li:before {
     color: #0d8abc
 }
 
+p {
+    margin: 0 0 0px;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+.main_content {
+    padding-bottom: 30px;
+}
+
 @media only screen and (max-width: 767px)  {
     .tit h1 {
         font-size: 20px;
