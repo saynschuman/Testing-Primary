@@ -1742,6 +1742,8 @@ body .modal {
     width: 30%;
     height: 80%;
     top: 30px;
+    min-height: 500px;
+    min-width: 320px;
 }
 
 .modal label {
@@ -2012,20 +2014,7 @@ body .nav-tabs a {
 
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 510px) {
@@ -2039,16 +2028,12 @@ body .nav-tabs a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+@media only screen and (max-width: 350px) {
+    body .nav-tabs a  {
+        font-size: 8px;
+
+    }
+}
+
