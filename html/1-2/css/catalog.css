@@ -326,3 +326,13 @@ font-family: ;
     max-width: 180px;
 }
 }
+
+
+@media only screen and (max-width: 767px) {
+.list_inner {
+	padding: 0;
+	
+}
+
+
+}
