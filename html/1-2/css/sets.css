@@ -1,3 +1,10 @@
+
+.sale_complect_descr {
+    text-align: center;
+    display: block;
+    height: 65px;
+}
+
 .sale_complect_text {
 	width: 150px;
 }
