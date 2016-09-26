@@ -35,7 +35,7 @@
 }
 
 .sale_complect_photo a, .sale_complect_title {
-    display: flex;
+    display: block;
     text-align: center;
     width: 100%;
 }
@@ -75,7 +75,7 @@
 }
 
 .sale_complect_current_price .prod_price {
-	font-size: 21px;
+	font-size: 19px;
 }
 
 .sale_complect_current_price {
