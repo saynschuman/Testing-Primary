@@ -1,0 +1,93 @@
+.sale_complect_text {
+	width: 150px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	h1 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.sale_complect_photo {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.sale_complect_photo a img {
+    max-width: none;
+    max-height: none;
+}
+
+.sale_complect_photo a img {
+    max-width: none;
+    max-height: none;
+    width: 100px;
+    height: 100px;
+}
+
+.sale_complect_photo a, .sale_complect_title {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.sale_complect_item {
+    justify-content: center;
+    width: 50%;
+}
+
+.sale_complect_plus_block {
+    display: -webkit-flex;
+    width: 0;
+}
+
+.sale_complect_shadow {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.sale_complect_text {
+		display: none;
+	}
+
+.sale_complect_old_price .prod_old_price {
+	font-size: 18px;
+}
+
+.sale_complect_current_price .prod_price {
+	font-size: 21px;
+}
+
+.sale_complect_current_price {
+	font-size: 25px;
+}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	h1 {
+    font-size: 15px;
+    margin: 0;
+}
+}
+
+@media only screen and (max-width: 339px) {
+.sale_complect_price {
+	width: 200px;
+}
+}

@@ -2398,10 +2398,53 @@ span.strong {
     /*margin-bottom: 30px;*/
 }
 
+/*акционный комплекты*/
 
+body .sale_complect_buy {
+    display: block;
+}
+.sale_complect_buy, .sale_complect_more {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sale_complect_buy {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: -18px;
+    width: 200px;
+    height: 33px;
+    line-height: 33px;
+    background: url(../img/sale_complect_buy.png);
+    background-position: 0 0;
+    z-index: 40;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 0 -1px 0 #0d6ca9;
+}
 
+.sale_complect_buy::before {
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 6px;
+    margin-right: 18px;
+    background: url(../img/one_item_cart.png) no-repeat;
+}
 
-
+.no_margin {
+    margin: 0 0 60px;
+}
 
 
 

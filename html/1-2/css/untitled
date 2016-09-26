@@ -1,0 +1,5 @@
+.sale_complect_photo {
+    display: inline-block;
+    width: 50%;
+    height: 170px;
+}
