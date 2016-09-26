@@ -90,12 +90,13 @@ pre.pre-show{
 	
 }
 .tab-content{
-	border-left: 1px solid #ddd;
+	/*border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;*/
 	-webkit-border-radius: 0px 0px 4px 4px;
 	-moz-border-radius: 0px 0px 4px 4px;
 	border-radius: 0px 0px 4px 4px;
+	padding: 25px 0;
 	
 }
 

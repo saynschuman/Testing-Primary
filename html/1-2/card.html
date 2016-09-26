@@ -12,8 +12,10 @@
 	<link rel="stylesheet" href="css/card.css">
 	<link rel="stylesheet" href="css/mobile_menu.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
 	<link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/counter.css">
 	
 
 	<!-- Owl Carousel Assets -->
@@ -479,7 +481,9 @@
               </a>
 
               <span class="one_item_sale_down">До конца акции осталось:</span>
-              <div class="defaultCountdown"></div>
+              <div class="defaultCountdown">
+                <div id="CDT"></div>
+              </div>
             </a>
           </div>
 
@@ -559,9 +563,10 @@
 
         <div class="tabs">
           <ul id="itemTab" class="nav nav-tabs">
-            <li><a href="#info" data-toggle="tab">Описание</a></li>
-            <li class="data-primary"><a href="#fields" data-toggle="tab">Характеристики</a></li>                  <li><a href="#gallery" data-toggle="tab">Фото</a></li>                  
-            <li><a href="#comments" data-toggle="tab">Отзывы </a></li>
+            <li ><a href="#info" data-toggle="tab">Описание</a></li>
+            <li class="data-primary"><a href="#fields" data-toggle="tab">Характеристики</a></li>                  
+            <li id="gal"><a href="#gallery" data-toggle="tab">Фото</a></li>                  
+            <li id="com"><a href="#comments" data-toggle="tab">Отзывы </a></li>
 
           </ul>
           <div class="tab-content" itemprop='description'>
@@ -774,7 +779,6 @@
                       <img itemprop="image" src="img/62843_s.jpg" alt="стиральная машина Zanussi ZWSE 7120 V купить" title="стиральная машина Zanussi ZWSE 7120 V" />
                     </a>
                     <a rel="prettyPhoto[pp]" href="img/62794.jpg" alt="стиральная машина Zanussi ZWSE 7120 V купить" title="стиральная машина Zanussi ZWSE 7120 V">
-                      <img itemprop="image" src="img/62794_s.jpg" alt="стиральная машина Zanussi ZWSE 7120 V купить" title="стиральная машина Zanussi ZWSE 7120 V" />
                     </a>
                     <a rel="prettyPhoto[pp]" href="img/62844.jpg" alt="стиральная машина Zanussi ZWSE 7120 V купить" title="стиральная машина Zanussi ZWSE 7120 V">
                       <img itemprop="image" src="img/62844_s.jpg" alt="стиральная машина Zanussi ZWSE 7120 V купить" title="стиральная машина Zanussi ZWSE 7120 V" />
@@ -787,6 +791,7 @@
 
                   <div class="one_item_reviews_head">
                     <span class="one_item_reviews_title">Отзывы о Zanussi ZWSE 7120 V</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nam tempore inventore dolor, iusto deleniti nulla reprehenderit nesciunt laboriosam modi amet enim a voluptatibus excepturi doloremque ab voluptas temporibus expedita ducimus saepe atque quia, vero magnam repellendus. Aspernatur omnis magnam autem animi ducimus incidunt corporis praesentium ratione nam sit dolor, id voluptates, sequi odit neque quia, quos eum. Minima vero vel repellendus dolores architecto ad, maxime reiciendis deleniti facere? Laborum consectetur doloremque dolore recusandae est alias dolor beatae sapiente adipisci, sequi, eveniet velit autem voluptatibus neque voluptatem magnam commodi! Eius placeat eveniet ullam dicta sint voluptates magni corporis modi atque fugit id quia, ex in ducimus laborum laboriosam tempora porro, necessitatibus quisquam, culpa voluptatibus! Odit adipisci accusamus deleniti, nobis, quae provident! Est ipsum, optio ad nisi nostrum veritatis itaque neque ratione harum at voluptatibus corporis voluptatum consequatur, aspernatur delectus magnam distinctio similique! Veritatis tempora praesentium, mollitia, ab, voluptatibus tempore dolor enim officiis explicabo sunt nulla cum molestiae quae ea repudiandae cupiditate. Sequi voluptate debitis, vero optio incidunt laboriosam error modi voluptatum, maiores rerum totam excepturi architecto sit. Aut provident aliquid quas repellendus optio eligendi voluptas molestiae, et vel tenetur cum, porro consequuntur obcaecati blanditiis saepe voluptatem. Quidem non perspiciatis praesentium.</p>
                     <a href="#comments-modal" class="one_item_blue_button one_item_reviews_button" data-toggle="modal">Оставить отзыв</a>
                   </div>
 
@@ -799,32 +804,7 @@
 
       <div class="clearfix"></div>
     </div>
-    <nav class="breadcumbs">
-      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a itemprop="url" href="http://590.ua/"><span itemprop="title">Интернет магазин бытовой техники</span></a>
-        <i>&rarr;</i>
 
-      </span>
-      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a itemprop="url" href="http://ot.590.ua"><span itemprop="title">Отдельностоящая техника</span></a>
-        <i>&rarr;</i>
-
-      </span>
-      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a itemprop="url" href="http://ot.590.ua/washing-machines"><span itemprop="title">Стиральные машины</span></a>
-        <i>&rarr;</i>
-
-      </span>
-      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a itemprop="url" href="http://ot.590.ua/washing-machines/brand/Zanussi"><span itemprop="title">Zanussi</span></a>
-        <i>&rarr;</i>
-
-      </span>
-      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-        <span itemprop="title">ZWSE 7120 V</span>
-
-      </span>
-    </nav>
 
   </div><!-- /.content -->
 </div><!-- /.central_block -->
@@ -1029,7 +1009,7 @@
 
 
     </noindex>
-    <div class="navbar navbar-fixed-bottom data-navbar">
+<!--     <div class="navbar navbar-fixed-bottom data-navbar">
       <div class="navbar-inner">
         <div class="container">
           <div class="nav-collapse collapse">
@@ -1049,7 +1029,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -1177,6 +1157,9 @@
   		<script src="js/owl.carousel.js"></script>
 
   		<script src="js/main.js"></script>
+      <script src="js/countdown.js"></script>
+      <script src="js/card.js"></script>
+      <script src="http://ot.590.ua/public/js/jquery-ui-1.8.23.custom.min.js"></script>
 
 
 
