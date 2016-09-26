@@ -1096,8 +1096,103 @@ h2 {
     color: #000;
 }
 
+.action-new_icon {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: -11px;
+    top: -11px;
+    z-index: 3;
+    display: block;
+    background: url(../img/icon-action-new.png) no-repeat;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+.action-new__item:hover .action-new_icon {
+    background: url(../img/icon-action-new-orange.png) no-repeat;
+}
+
+.action-new__item:hover {
+    -moz-box-shadow: 0 0 20px #666;
+    -webkit-box-shadow: 0 0 20px #666;
+    -o-box-shadow: 0 0 20px #666;
+    box-shadow: 0 0 20px #999;
+}
 
 
+.action-new__item {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    text-decoration: none !important;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    transition: all 0.2s;
+    color: #000;
+    margin-bottom: 40px;
+    max-width: 250px;
+}
+
+.action-new__img {
+    height: auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    -moz-border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
+    -o-border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.action-new-date {
+    padding: 10px;
+    display: block;
+    background-color: #e8e8e8;
+}
+
+.action-new__img img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+
+}
+
+.action-new-date span {
+    display: block;
+    text-decoration: none !important;
+}
+
+.action-new-date .date-large {
+    font-size: 18px;
+}
+.action-new-date span {
+    display: block;
+    text-decoration: none !important;
+}
+
+.action-new__info {
+    height: 45px;
+    padding: 5px 10px 10px 10px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #e8e8e8;
+    -moz-border-radius: 0 012px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+    -o-border-radius: 0 0 12px 12px;
+    border-radius: 0 0 12px 12px;
+    line-height: normal;
+    text-decoration: underline;
+}
 
 
 
@@ -1124,7 +1219,9 @@ h2 {
      font-size: 20px;   
     }
 
-
+.act_tit {
+    font-size: 20px;
+}
 }
 
 
@@ -1155,12 +1252,8 @@ h2 {
     display: none;
 }
 
+.act_tit {
+    font-size: 18px;
 }
 
-/*@media only screen and (max-width: 320px)  {
-.faq_title {
-    font: 700 12px Arial;
-    transition: all .5s ease;
 }
-
-}*/
