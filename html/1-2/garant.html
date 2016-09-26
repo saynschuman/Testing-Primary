@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет магазин</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mobile_menu.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/slider_2.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Owl Carousel Assets -->
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+
+  <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+  
+  <!-- Le fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="content">
+      <div class="container">
+        <!-- top panel block-->
+        <div class="row">
+          <div class="site_panel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="site_panel_left_side">
+              <a href="index.html" class="main_page_link">Главная</a>
+              <a href="http://590.ua/#login" class="autorization_link" data-toggle="modal">Авторизация</a>
+            </div>
+            <span class="right_side_top">
+              <div class="site_panel_right_side">
+                <span class="accept">Принимаем:</span>
+                <img src="img/visa.png" width="34px" height="20px" alt="visa">
+                <img src="img/visa-2.png" width="34px" height="12px" alt="visa">
+                <img src="img/maestro.png" width="34px" height="12px" alt="visa">
+                <img src="img/master-card.png" width="34px" height="12px" alt="visa">
+              </div>
+            </span>
+          </div>    
+        </div>
+
+        <!-- logo_block -->
+        <div class="row">
+          <div class="logo">
+            <a class="logo_img" href="index.html">
+              <img src="img/logo.png">
+            </a>
+            <div class="middle">
+              <div class="top">
+                <div class="social_links">
+                  <a rel="nofollow" href="http://www.facebook.com/590.ua" target="_blank">
+                    <img src="img/fb.png" width="20px" height="20px" alt="fb">
+                  </a>
+                  <a rel="nofollow" href="http://vk.com/ua590" target="_blank">
+                    <img src="img/vk.png" width="20px" height="20px" alt="vk">
+                  </a>
+                  <a rel="nofollow" href="http://twitter.com/590Ua" target="_blank">
+                    <img src="img/twiter.png" width="20px" height="20px" alt="twitter">
+                  </a>
+                  <a rel="nofollow" href="http://plus.google.com/101839783687775705263?rel=author">
+                    <img src="img/google.png" width="20px" height="20px" alt="google"></a>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <form action="" method="post" name="searchForm" class="search">
+                    <div class="penta"></div>
+                    <input autocomplete="off" type="text" placeholder="Поиск..." id="searchtext" name="searchtext">
+                    <button type="submit" class="button_v1">Найти</button>
+                  </form>
+                </div>
+              </div>
+              <div class="contacts cities">
+                <div class="region-choose">
+                  <div class="btn-group">
+                    <span class="btn btn-mini city-button " data-toggle="dropdown">
+                      <span class="data-current-city">Киев
+                        <i class="caret"></i>
+                      </span>
+                    </span>
+                    <ul class="dropdown-menu data-region-list">
+                      <li><a href="" id="region_6" data-phone="(0432) 57-27-77; (067) 262-43-43" onclick="selectRegion(6)">Винница</a></li>
+                      <li><a href="" id="region_2" data-phone="(056) 788-71-71, (095) 270-50-71" onclick="selectRegion(2)">Днепропетровск</a></li>
+                      <li><a href="" id="region_12" data-phone="(062) 207-46-90;  (050) 444-68-25" onclick="selectRegion(12)">Донецк</a></li>
+                      <li><a href="" id="region_9" data-phone="(061) 701 19 60;  (098) 867-13-92" onclick="selectRegion(9)">Запорожье</a></li>
+                      <li><a href="" id="region_1" data-phone="(044) 223-85-20; (050) 590-0-590; (067) 803-17-54" onclick="selectRegion(1)">Киев</a></li>
+                      <li><a href="" id="region_5" data-phone="(0522) 59-50-39;  (066) 520-80-66" onclick="selectRegion(5)">Кировоград</a></li>
+                      <li><a href="" id="region_17" data-phone="(0536) 78-20-39;  (066) 957-05-11" onclick="selectRegion(17)">Кременчуг</a></li>
+                      <li><a href="" id="region_13" data-phone="(056) 443-50-39;  (098) 786-42-86" onclick="selectRegion(13)">Кривой Рог</a></li>
+                      <li><a href="" id="region_4" data-phone="(032) 247-04-09; (067) 434-68-00" onclick="selectRegion(4)">Львов</a></li>
+                      <li><a href="" id="region_21" data-phone="(093) 929-46-37" onclick="selectRegion(21)">Мариуполь</a></li>
+                      <li><a href="" id="region_20" data-phone="(0552) 44-12-87" onclick="selectRegion(20)">Николаев</a></li>
+                      <li><a href="" id="region_7" data-phone="(048) 702-56-84;  (050) 333-41-33" onclick="selectRegion(7)">Одесса</a></li>
+                      <li><a href="" id="region_3" data-phone="(057) 762-60-33;  (050) 443-61-43" onclick="selectRegion(3)">Харьков</a></li>
+                      <li><a href="" id="region_22" data-phone="(0552) 44-12-87" onclick="selectRegion(22)">Херсон</a></li>
+                      <li><a href="" id="region_19" data-phone="(0472) 51-15-39; (098) 786-42-86" onclick="selectRegion(19)">Черкассы</a></li>
+                    </ul>
+                  </div>
+                  <div class="phones">
+                    <span class="data-phones ringo-phone">
+                      <span>(044) 223-85-20; (050) 590-0-590; (067) 803-17-54</span>
+                    </span>
+                  </div>
+                  <div class="days">
+                    <p>пн - чт: 9:30 - 18:00, пт-вс: 10:00 - 18:00</p>
+                    <p class="work-time__region hide">пн - пт: 9:00 - 18:00, сб, вс: выходной</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="of">Официальный представитель бытовой техники в Украине</div>
+          <!-- navbar -->
+          <div class="row">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <div class="menu_wrapper">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">контакты</a></li>
+                      <li><a href="#">оплата</a></li>
+                      <li><a href="#">гарантия и сервис</a></li>
+                      <li><a href="#">вопрос-ответ</a></li>
+                      <li><a href="#">новости и акции</a></li>
+                      <li><a href="#">статьи</a></li>
+                    </ul>
+                    <div class="shadow"></div>
+                  </div>
+                  <div class="nav navbar-nav navbar-right">
+                    <div class="basket">
+                      <a href="" class="basket_info data-openBasket shopping-cart-lnk">
+                        <span class="count data-basket-amount">0</span>  
+                        <span>товаров на сумму</span>  
+                        <span class="summ data-basketSumm">0</span>  
+                        <span><span class="strong">грн.</span></span>
+                      </a>
+                      <div class="currency_selector custom_select">
+                        <select id="currencies_select">
+                          <option selected="selected">Гривна</option>
+                          <option>Доллар</option>
+                          <option>Евро</option>
+                        </select>
+                      </div>
+                    </div>                   
+                  </div>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>          
+          </div>
+
+          <!-- mobile menu -->
+
+          <div class="row mobile_menu">
+            <div class="mobile col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="toggle_button"></div>
+              <div class="span-4 mobile">
+                <div class="mobile">
+                  <ul id="navigation-menu" class=" mobile">
+                    <li data-submenu-id="item-1">
+                      <a href="">контакты</a>
+                    </li>
+                    <li data-submenu-id="item-2">
+                      <a href="">оплата</a>
+                    </li>
+                    <li data-submenu-id="item-3">
+                      <a href="">гарантия и сервис</a>                     
+                    </li>
+                    <li data-submenu-id="item-4">
+                      <a href="">вопрос-ответ</a>
+                    </li>
+                    <li data-submenu-id="item-5">
+                      <a href="">новости и акции</a>
+                    </li>
+                    <li data-submenu-id="item-6">
+                      <a href="">статьи</a>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>            
+          </div>
+
+          <!-- end mobile menu -->                  
+
+
+
+          <div class="main">
+            <div class="row">
+              <div class="sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+                <div class="span-4 sidebar">
+                  <ul class="action">
+                    <li><a href="">Акционные комплекты<img src="img/star.png" width="45px" height="35px"></a></li>
+                  </ul>
+                  <ul class="toggle_sidebar">
+                    <li><a href="javascript:void(0)" class="cat_click">Каталог товаров</a></li>
+                  </ul>
+
+                  <div class="sidebar">
+                    <ul id="navigation-menu" class="sidebar">
+                      <li data-submenu-id="submenu-1">
+                        <a href="">item - 1</a>
+                      </li>
+                      <li data-submenu-id="submenu-2">
+                        <a href="">item - 2</a>
+                      </li>
+                      <li data-submenu-id="submenu-3">
+                        <a href="">item - 3</a>                     
+                      </li>
+                      <li data-submenu-id="submenu-4">
+                        <a href="">item - 4</a>
+                      </li>
+                      <li data-submenu-id="submenu-5">
+                        <a href="">item - 5</a>
+                      </li>
+                      <li data-submenu-id="submenu-6">
+                        <a href="">item - 6</a>
+                      </li>
+                      <li data-submenu-id="submenu-7">
+                        <a href="">item - 7</a>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <!--brand_selector-->
+                  <div class="brand_selector ">
+                    <div class="custom_select">
+                      <select name="brand">
+                        <option>Выберите бренд</option>
+                        <option value="">Brand - 1</option>
+                        <option value="">Brand - 2</option>
+                        <option value="">Brand - 3</option>
+                        <option value="">Brand - 4</option>
+                        <option value="">Brand - 5</option>
+                        <option value="">Brand - 6</option>
+                        <option value="">Brand - 7</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+
+                </div><!-- /.sidebar -->
+
+                <!-- mobile good list -->
+
+
+
+
+              </div>
+              <div class="main_content col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<div class="breadcrumbs span-12 no_margin">
+  <a href="#">Интернет магазин бытовой техники</a>
+  <span>→</span>
+  <span>Гарантия и сервис</span>
+</div>
+
+<div class="text default-styles tit"> <h1>Гарантии и сервис, возврат и обязанности покупателей</h1>
+
+<p><br />
+<strong>Уважаемые покупатели, для подключения крупной электрической техники обращайтесь, пожалуйста, к специалистам сервисных центров!</strong></p>
+
+<ul>
+	<li>Предоставление любых дополнительных сроков бесплатного обслуживания должно быть подтверждено специальными документами.  Проследите, чтобы талон был правильно заполнен и имел штамп торгующей организации.</li>
+	<li>При невозможности определения даты покупки и установки, бесплатное обслуживание исчисляется с момента изготовления изделия. Сохраняйте сервисный сертификат и чек на купленное изделие.</li>
+	<li>Удовлетворение требований потребителя по окончании бесплатного обслуживания производится в соответствии с действующим законодательством.<br />
+	  </li>
+</ul>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="guarantee-table">
+	<tbody>
+		<tr>
+			<td>
+			<p>  <strong>Производитель </strong></p>
+			</td>
+			<td>
+			<p><strong>Гарантийный срок  </strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>  nbsp;AEG<br />
+			  Electrolux<br />
+			  Zanussi </strong></td>
+			<td>  <strong>1 </strong>год<br />
+			  </td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>  </strong><strong> Hotpoint (Ariston)</strong><br />
+			  </p>
+			</td>
+			<td>  <strong>1 </strong>год</td>
+		</tr>
+		<tr>
+			<td><strong>  Blanco</strong></td>
+			<td>  Мойки:<br />
+			   <strong>5</strong> лет (на силгранит и керамику),<br />
+			   <strong>2</strong> года (на нержавеющую сталь).</td>
+		</tr>
+		<tr>
+			<td>  <strong>Bosch</strong><br />
+			<strong>  Siemens</strong></td>
+			<td>  <strong>2</strong> года</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td>  <strong>Braun</strong></td>
+			<td>  <strong>1</strong> год</td>
+		</tr>
+		<tr>
+			<td>  <strong>DeLongi</strong></td>
+			<td>  <strong>2</strong> года (на кофемашины)<br />
+			<strong>1 </strong> год (на другую технику: мороженица, увлажнитель воздуха, гриль, чайник...)</td>
+		</tr>
+		<tr>
+			<td>  <strong>Falmec</strong></td>
+			<td>  <strong>1 </strong>год</td>
+		</tr>
+		<tr>
+			<td>  <strong>Gorenje</strong></td>
+			<td>  <strong>2 </strong>года</td>
+		</tr>
+		<tr>
+			<td><strong>  Hansa</strong></td>
+			<td><strong>  1 </strong>год</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td><strong>  Kenwood</strong></td>
+			<td><strong>  2 </strong>года (на кофемашины и кухонные машины)<br />
+			<strong>  1 </strong>год (на другую технику: блендер, мороженица, мясорубка, соковыжималка, хлебопечь...)</td>
+		</tr>
+		<tr>
+			<td>  <strong>LG</strong></td>
+			<td><strong>  1</strong> год</td>
+		</tr>
+		<tr>
+			<td>  <strong>Liebherr</strong></td>
+			<td><strong>  1</strong> год</td>
+		</tr>
+		<tr>
+			<td>  <strong>Miele</strong></td>
+			<td>  <strong>2</strong> года + <strong>2</strong> года<br />
+			(2 года заводской гарантии и бесплатного сервисного обслуживания + 2 года бесплатного обслуживания с оплатой деталей и запчастей)</td>
+		</tr>
+		<tr>
+			<td>  <strong>Samsung</strong></td>
+			<td><strong>  3</strong> года полной гарантии</td>
+		</tr>
+		<tr>
+			<td>  <strong>Sencor</strong></td>
+			<td>  <strong>2</strong> года</td>
+		</tr>
+		<tr>
+			<td>  <strong>Zirtal</strong></td>
+			<td>  <strong>3</strong> года</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<strong>Бесплатное обслуживание не производится в случаях:</strong></p>
+
+<ol>
+	<li>- не соблюдение правил эксплуатации;</li>
+	<li>- утраты чека и/или гарантийного сертификата;</li>
+	<li>- ремонта не уполномоченными на это лицами, его разборки и других не предусмотренных инструкцией вмешательств;</li>
+	<li>- механических повреждений, следов воздействия химических веществ и неправильного пользования расходными материалами;</li>
+	<li>- повреждений, вызванных экстремальными климатическими условиями при транспортировке, хранении и эксплуатации;</li>
+	<li>- повреждений или нарушений нормальной работы, вызванных животными или насекомыми;</li>
+	<li>- включения изделия в сеть с недопустимыми параметрами;  </li>
+	<li>- использования изделия в целях, для которых оно не предназначено;</li>
+	<li>- внесения исправлений в текст сертификата или талона;</li>
+	<li>- неисправностей, вызванных действием непреодолимой силы (пожар, стихийных бедствий и т.п.);</li>
+	<li>- образования на нагревательных элементах избыточного слоя накипи (в случае повышенной жесткости воды необходима периодическая обработка соответствующими препаратами);</li>
+	<li>- блокировки подвижных элементов изделия при попадании во внутренние рабочие объемы посторонних предметов и мелких деталей одежды</li>
+	<li>- механическое или термическое разрушение органов управления приборами, разрушение легко бьющихся стеклянных и пластиковых изделий, замены лампочек подсветки, изменение цветовой гаммы поверхности изделия.</li>
+</ol>
+
+<p>  </p>
+
+<h4>Адреса сервисных центров в Киеве</h4>
+
+<p>  </p>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="table_cellpadding" style="width:100%">
+	<tbody>
+		<tr>
+			<td>
+			<p>  <strong>Производитель</strong></p>
+			</td>
+			<td>
+			<p><strong>  Название и адрес сервисного центра (Киев)</strong></p>
+			</td>
+			<td>
+			<p><strong>  Телефон (код города 044)</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>  AEG<br />
+			  Gorenje   <br />
+			Electrolux<br />
+			  Zanussi</strong></p>
+
+			<p>  </p>
+
+			<p>  </p>
+			</td>
+			<td>  Амати-Сервис ;<br />
+			ул. Бориспольская, 9, корп.57<br />
+			<br />
+			  Электросервис ;<br />
+			ул. Глубочицкая, 53.<br />
+			<br />
+			  Крокус ;<br />
+			ул.О. Телиги, 25-А<br />
+			  </td>
+			<td>
+			<p><br />
+			369-50-01, 369-50-30<br />
+			<br />
+			<br />
+			428-65-65<br />
+			<br />
+			<br />
+			453-96-33, 455-67-11</p>
+
+			<p>  </p>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>  Ariston (Hotpoint-Ariston)</strong></td>
+			<td>
+			<p>Представительство:<br />
+			ул. Луначарского 4, 6эт. (ТЦ Комод)<br />
+			<br />
+			  Амати-Сервис ;<br />
+			ул. Бориспольская, 9, корп.57<br />
+			<br />
+			ООО   Электросервис ;<br />
+			ул. Глубочицкая, 53.<br />
+			  </p>
+			</td>
+			<td>
+			<p>494-36-10 (горячая линия)<br />
+			<br />
+			369-50-01, 369-50-30<br />
+			<br />
+			425-05-34, 463-79-46, 425-05-80</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>  <br />
+			<strong>Blanco</strong><br />
+			  </p>
+			</td>
+			<td>По звонку<br />
+			  </td>
+			<td>0-800-500-716 (горячая линия)<br />
+			  </td>
+		</tr>
+		<tr>
+			<td>  <strong>Bosh<br />
+			  Siemens</strong></td>
+			<td>
+			<p>  </p>
+
+			<p>  Дойчэлектросервис ;<br />
+			б-р Лепсе, 55<br />
+			<br />
+			  Побуттех сервис ;<br />
+			ул. Нижний Вал, 33-Г, оф. 27<br />
+			<br />
+			  Амати-Сервис ;<br />
+			ул. Бориспольская, 9, корп.57<br />
+			<br />
+			  Техноофис ;<br />
+			пр-т 50-Летия Октября, 10-А<br />
+			  </p>
+			</td>
+			<td>248-71-54, 497-29-36<br />
+			<br />
+			462-52-92, 599-71-23<br />
+			<br />
+			<br />
+			369-50-01, 369-50-30<br />
+			<br />
+			<br />
+			274-96-74, 274-96-76</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong>  Broan</strong></p>
+
+			<p>  </p>
+
+			<p>  </p>
+			</td>
+			<td>  Электросервис ;<br />
+			ул. Глубочицкая, 53.</td>
+			<td>428-65-65
+			<p>  </p>
+			</td>
+		</tr>
+		<tr>
+			<td>  <strong>Hansa</strong><br />
+			  </td>
+			<td>
+			<p><br />
+			ТЦ Крок<br />
+			ул. Героев Днепра, 2-А<br />
+			  </p>
+			</td>
+			<td>0-800-504-504 (горячая линия)</td>
+		</tr>
+		<tr>
+			<td>  <strong>Jet Air</strong></td>
+			<td>
+			<p>  </p>
+
+			<p>  Электросервис ;<br />
+			ул.Глубочицкая, 53.</p>
+
+			<p>  </p>
+			</td>
+			<td>428-65-65</td>
+		</tr>
+		<tr>
+			<td>  <strong>Liebherr</strong></td>
+			<td>
+			<p>  </p>
+
+			<p>ул. Нижний вал, 33-Г, оф.27</p>
+
+			<p>  </p>
+			</td>
+			<td>599-71-23, 462-52-92, 462-50-05</td>
+		</tr>
+		<tr>
+			<td>
+			<p>  <br />
+			<strong>Sencor</strong><br />
+			  </p>
+			</td>
+			<td>По звонку<br />
+			  </td>
+			<td>0-800-500-716 (горячая линия)<br />
+			  </td>
+		</tr>
+		<tr>
+			<td>  <strong> Zirtal </strong></td>
+			<td>
+			<p>  </p>
+
+			<p>  Побуттех сервис ;<br />
+			ул. Нижний Вал, 33-Г, оф. 27</p>
+
+			<p>  </p>
+			</td>
+			<td>462-52-92, 599-71-23</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="table_cellpadding" style="width:100%">
+</table>
+
+<h4><br />
+  Адреса сервисных центров в Украине</h4>
+
+<p><strong>Blanco, Zirtal, Liebherr (все регионы, кроме Киева)<br />
+Горячая линия: </strong>0-800-500-716<br />
+<br />
+<strong>Другие бренды</strong><br />
+<br />
+<strong>Белая Церковь </strong><br />
+  Дойч электросервис ;<br />
+ул. Леваневского, 28<br />
+(04563) 3-32-95<br />
+<br />
+<strong>Винница </strong><br />
+  Специалист ;<br />
+ул. Порика, 1<br />
+(0432) 57-91-91, 50-91-91<br />
+<br />
+<strong>Днепропетровск </strong><br />
+  Меридиан ;<br />
+ул. Ширшова, 14 и 16<br />
+(056) 778-24-68, 370-55-73<br />
+<br />
+<strong>Донецк </strong><br />
+  Сити-сервис ;<br />
+ул. Лазо, 33<br />
+(062) 386-95-13, 382-99-76<br />
+<br />
+<strong>Запорожье </strong><br />
+  Альфа техно центр ;<br />
+ул. Дзержинского, 83<br />
+(061) 212-03-03, 212-06-08<br />
+<br />
+<strong>Ивано-Франковск </strong><br />
+  Карпаты-Сервис ;<br />
+ул. Г.Хоткевича, 32<br />
+(0342) 77-60-77<br />
+<br />
+<strong>Кировоград </strong><br />
+ООО   СЦ Техномир ;<br />
+ул. Васнецова, 8<br />
+(0522) 36-10-14, 27-01-77<br />
+<br />
+<strong>Кременчуг </strong><br />
+ЧП   Инэк-Кремень ;<br />
+ул. Московская, 55/1<br />
+(0536) 65-31-32, 77-66-98<br />
+<br />
+<strong>Кривой Рог </strong><br />
+  Домтехсервис ;<br />
+ул. Тынка, 24<br />
+(056) 409-42-70<br />
+<br />
+<strong>Луганск </strong><br />
+  Луганск-сервис ;<br />
+СПД Терещенко<br />
+ул. Фрунзе, 136-Б<br />
+(0642) 49-54-50, 49-44-17, 49-32-96<br />
+<br />
+<strong>Львов </strong><br />
+  Эко сервис Лева ;<br />
+ул. Винниченко, 30<br />
+(0322) 97-55-88, 97-55-57<br />
+<br />
+<strong>Николаев </strong><br />
+  Евросервис ;<br />
+ул. Б.Морская, 30/1<br />
+(0512) 37-77-97<br />
+<br />
+<strong>Одесса </strong><br />
+СП   Транс-Сервис ;<br />
+ул. Новоселського, 64<br />
+(048) 777-11-40, 777-95-36<br />
+<br />
+ул. Пушкинская, 49<br />
+(048) 700-07-09<br />
+<br />
+<strong>Сумы </strong><br />
+  Эльф ; ул. Петропавловская, 86/1<br />
+(0542) 65-03-40<br />
+<br />
+<strong>Харьков </strong><br />
+Каскад-сервис<br />
+ул. Полтавский шлях, 3<br />
+(057) 712-51-81, 777-06-20<br />
+<br />
+<strong>Херсон </strong><br />
+  Артис ;<br />
+ул. Котовского, 4<br />
+(0552) 49-24-03<br />
+<br />
+<strong>Хмельницкий </strong><br />
+Прелюдия-сервис<br />
+пр-т Мира, 62-А<br />
+(0382) 70-13-77<br />
+<br />
+<strong>Черкассы </strong><br />
+  Кварц ; ООО<br />
+б-р Шевченко, 320<br />
+(0472) 38-31-24<br />
+<br />
+<strong>Ялта </strong><br />
+  АВИ-Электроникс ;<br />
+ул. Ждановского, 3 (0654) 34-31-60, 34-30-51<br />
+<br />
+ЧП Заубер<br />
+ул.Дражинского, 35<br />
+(0654) 27-33-10, 35-24-01<br />
+  </p>
+
+<h4>Возврат</h4>
+
+<p>Процедура возврата бытовой техники описана в данной <a href="http://www.590.ua/articles/99">статье</a>.<br />
+<br />
+<strong>Обращаем Ваше внимание на выдержки из закона &quot;ПРАВА СПОЖИВАЧІВ ТА ЇХ ЗАХИСТ&quot;</strong><br />
+Стаття 4.3. <strong>Споживачі зобов&#39;язані</strong>:<br />
+1) перед початком експлуатації товару уважно   ознайомитися   з правилами     експлуатації,     викладеними     в     наданій     виробником<br />
+(продавцем, виконавцем) документації на товар;</p>
+
+<p>         2) в     разі     необхідності     роз&#39;яснення     умов     та     правил використання товару - до початку використання товару звернутися за роз&#39;ясненнями до продавця   (виробника,   виконавця)   або   до   іншої вказаної   в   експлуатаційній   документації   особи,   що   виконує їх функції;</p>
+
+<p>         3) користуватися товаром згідно з його цільовим   призначенням та     дотримуватися     умов     (вимог,   норм,   правил),   встановлених виробником товару (виконавцем) в експлуатаційній документації.</p>
+ </div>
+                                 </div><!-- /.content -->
+    </div><!-- /.central_block -->
+</div><!-- /.main_block -->
+
+<div style="display: none">
+  <!--staticcategoryr-->
+     <!--/staticcategoryr-->
+</div>
+<div style="display: none">
+  <!--staticbrandr-->
+     <!--/staticbrandr-->
+</div>
+
+<div class="clear"></div>
+
+        		  </div>
+            <!-- end main content -->
+      </div>
+    </div>
+  </div>
+            </div> 
+        
+
+
+          </div>
+
+
+
+
+
+
+
+
+  </div> 
+<footer>
+  <div class="footer_menu">
+    <div class="subfooter">
+      <div class="sitemap">
+      <ul>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Оплата</a></li>
+        <li><a href="">Доставка</a></li>
+      </ul>
+      <ul>
+        <li class="test"><a href="">Гарантия и сервис</a></li>
+        <li class="test"><a href="">Вопрос-ответ</a></li>
+        <li class="test"><a href="">Новости и Акции</a></li>
+        <li class="test"><a href="">Статьи</a></li>
+        <li class="test"><a href="">Карта сайта</a></li>
+      </ul>
+    </div>
+        <div class="footer_contacts">
+          <div class="top_contacts" itemscope itemtype="http://schema.org/Organization">
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <img src="img/mark.png" width="14px" height="20px">
+                <span>Адрес: <strong itemprop="streetAddress">ул. Дегтяревская 25а, корпус 1, секция №3, офис 413</strong>
+                 <strong itemprop="postalCode">04119</strong>, <strong itemprop="addressLocality">Украина</strong>,
+                                <strong itemprop="addressLocality">Киев</strong></span><br>
+                <span>Телефон: <strong itemprop="telephone" class="ringo-phone">+38(044) 223-85-20</strong></span><br>
+            </div>
+          </div>
+          <div class="bottom_contacts">
+            <p>Если вы заметили неточность в описании, выделите текст и нажмите CTRL+ENTER</p>
+            <p>Возможная ошибка будет оперативно исправлена</p>
+            <p>Компания не несет ответсвенность за описание товара</p>
+            <p class="currency-faq" id="currency-faq"><span class='strong'><span class="currency-faq-link">*</span> Цены в валюте указаны в качестве индикативных. Оплата товара производится в национальной валюте по курсу на день оплаты.</span></p>
+          </div>
+        </div>    
+
+            <div class="bbb">
+              <div class="top bt">
+                <div class="social_links social_links_bottom">
+                  <a rel="nofollow" href="http://www.facebook.com/590.ua" target="_blank">
+                    <img src="img/fb.png" width="20px" height="20px" alt="fb">
+                  </a>
+                  <a rel="nofollow" href="http://vk.com/ua590" target="_blank">
+                    <img src="img/vk.png" width="20px" height="20px" alt="vk">
+                  </a>
+                  <a rel="nofollow" href="http://twitter.com/590Ua" target="_blank">
+                    <img src="img/twiter.png" width="20px" height="20px" alt="twitter">
+                  </a>
+                  <a rel="nofollow" href="http://plus.google.com/101839783687775705263?rel=author">
+                    <img src="img/google.png" width="20px" height="20px" alt="google"></a>
+                  </div>
+                </div>
+              <div class="site_panel_right_side bot">
+                <span class="accept">Принимаем:</span>
+                <img src="img/visa.png" width="34px" height="20px" alt="visa">
+                <img src="img/visa-2.png" width="34px" height="12px" alt="visa">
+                <img src="img/maestro.png" width="34px" height="12px" alt="visa">
+                <img src="img/master-card.png" width="34px" height="12px" alt="visa">
+              </div>
+
+              </div>
+
+  <div class="site_panel site_panel_bottom col-lg-12 col-md-12 col-sm-12 col-xs-12 bottom_panel">
+    <div class="site_panel_left_side left_side_bottom">
+      <a href="index.html" class="main_page_link">Главная</a>
+      <a href="http://590.ua/#login" class="autorization_link" data-toggle="modal">Авторизация</a>
+    </div>
+  </div> 
+
+
+
+    </div>
+    
+  </div>
+</footer>
+  </div> 
+
+
+
+
+
+
+
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/application.js"></script>    
+  <script src="js/bootstrap.min_1.js"></script>
+  <script src="js/jssor.slider-21.1.5.mini.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+
+
+</body>
+</html>
