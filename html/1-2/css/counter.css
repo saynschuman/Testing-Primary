@@ -111,7 +111,15 @@
 }
 
 .defaultCountdown {
-        display: block;
-    width: 230px;
+    display: block;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+    #CDT .number-wrapper {
+        margin: 1%;
+    }
 }
