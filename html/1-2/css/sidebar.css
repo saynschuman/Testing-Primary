@@ -16,7 +16,7 @@
 
 .breadcrumbs {
     position: relative;
-    top: -23px;
+    top: 0;
     margin-bottom: -15px;
 }
 
@@ -24,6 +24,21 @@
     font: 11px Arial;
     color: #969696;
 }
+
+strong {
+    font-weight: 600;
+}
+
+.tit h1 {
+    border: 1px solid #e0f3fa;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px !important;
+}
+
+
+
 
 .breadcrumbs span {
     cursor: default;
@@ -945,4 +960,19 @@ ul.strange_marker li:before {
 .style_price {
     font: 14px 'roboto-condensedbold';
     color: #0d8abc
+}
+
+@media only screen and (max-width: 767px)  {
+    .tit h1 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px)  {
+    .tit h1 {
+        font-size: 16px;
+    }
+
 }
