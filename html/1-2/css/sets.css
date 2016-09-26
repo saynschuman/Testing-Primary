@@ -82,6 +82,8 @@
 	font-size: 25px;
 }
 
+
+
 }
 
 
@@ -90,6 +92,10 @@
 	h1 {
     font-size: 15px;
     margin: 0;
+}
+
+.sale_complect_current_price {
+	margin-left: 0;
 }
 }
 
