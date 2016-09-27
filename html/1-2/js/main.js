@@ -1,7 +1,12 @@
  jQuery(document).ready(function ($) {
 
 
-
+$('.cl').click(function(){
+  $('.modal_auth').hide();
+  $('.modal-backdrop').hide();
+  $('.body').css('overflow-y', 'scroll');
+  
+})
 
  $('.toggle_button').click(function(){
   $('ul.mobile').slideToggle();

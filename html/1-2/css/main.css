@@ -1734,7 +1734,7 @@ span.strong {
     border: 1px solid #97dbf6;
     border-radius: 4px;
     height: 30px;
-    width: 45px;
+    width: 100%;
     text-align: center;
     background: #eaf1f3; /* Old browsers */
     background: -moz-linear-gradient(top, #eaf1f3 0%, #ffffff 100%); /* FF3.6+ */
@@ -1874,9 +1874,7 @@ span.strong {
     margin-bottom: 10px !important;
 }
 
-/*.make_order input[type='radio']{
-    margin-bottom: 24px;
-    }*/
+
 
     .make_order .site_panel_right_side {
         float: none;
@@ -1891,7 +1889,7 @@ span.strong {
     }
 
     .make_order button {
-        width: 101%;
+        width: 100%;
         cursor: pointer;
     }
 
@@ -2238,18 +2236,18 @@ span.strong {
         display: block;
         position: absolute;
         /* size of arrow element */
-        width: 55px;
-        height: 55px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         background: url('../img/a02.png') no-repeat;
         overflow: hidden;
     }
-    .jssora02l { background-position: -3px -33px; }
-    .jssora02r { background-position: -63px -33px; }
-    .jssora02l:hover { background-position: -123px -33px; }
-    .jssora02r:hover { background-position: -183px -33px; }
-    .jssora02l.jssora02ldn { background-position: -3px -33px; }
-    .jssora02r.jssora02rdn { background-position: -63px -33px; }
+    .jssora02l { background-position: -16px -44px; }
+    .jssora02r { background-position: -76px -44px; }
+    .jssora02l:hover { background-position: -136px -44px; }
+    .jssora02r:hover { background-position: -196px -44px; }
+    .jssora02l.jssora02ldn { background-position: -16px -44px; }
+    .jssora02r.jssora02rdn { background-position: -76px -44px; }
 
     .jssort03 .p {
         position: absolute;
@@ -2313,10 +2311,64 @@ span.strong {
         height /**/: 32px;
     }
 
+/*modal*/
 
+.modal_auth {
+    background: #fff;
+    border: 1px solid #0093dd;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    box-shadow: 0 0 50px 0px rgba(0,0,0,.5);
+}
 
+.auth_name {
+    width: 100%;
+}
 
+.modal_auth {
+    padding-left: 15px;
+}
 
+.enter_form {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+
+.cl {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    font-family: arial;
+    cursor: pointer;
+    transition: .5s;
+    color: #000;
+}
+
+.cl:hover {
+    opacity: .9;
+    transform: rotate(360deg);
+    transition: .5s;
+    color: red;
+    
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 100;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    margin: auto;
+}
 
 
     footer {
