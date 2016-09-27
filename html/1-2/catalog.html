@@ -13,31 +13,10 @@
 	<link rel="stylesheet" href="css/mobile_menu.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
 	<link href="css/custom.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/catalog.css">
 
-
-	<!-- Owl Carousel Assets -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
-	<link href="js/google-code-prettify/prettify.css" rel="stylesheet">
-
-
-	<!-- Le fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="assets/ico/favicon.png">
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-
-
-
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,10 +26,6 @@
       <![endif]-->
   </head>
   <body>
-
-
-
-
   	<div class="wrapper">
   		<div class="content">
   			<div class="container">
@@ -72,7 +47,6 @@
   						</span>
   					</div>    
   				</div>
-
   				<!-- logo_block -->
   				<div class="row">
   					<div class="logo">
@@ -389,75 +363,19 @@
   												<li><div id="slider_169"></div></li>
   											</ul>
 
-  											<script type="text/javascript">
-  											$(document).ready(function() {
-  												$("#slider_169").slider({
-  													range: true,
-  													min:  28 ,
-  													max:  95 ,
-  													values: [ 28, 95 ],
-  													slide: function(event, ui) {
-  														$("#amount_from_169 ").val(ui.values[0]);
-  														$("#amount_to_169 ").val(ui.values[1]);
-  														document.addEventListener("mouseup",StopDrag,true);
-  														window.id = this.id;
-  													}
-  												});
-  												$("#amount_from_169 ").val($("#slider_169").slider("values", 0));
-  												$("#amount_to_169 ").val($("#slider_169").slider("values", 1));
-  												$('#amount_from_169').live('keyup', function(){
-  													if ($(this).val()!='')
-  													{
-  														$("#slider_169").slider("values",0,$(this).val());
-  													}
-  												});
-  												$('#amount_to_169').live('keyup', function(){
-  													if ($(this).val()!='')
-  													{
-  														$("#slider_169").slider("values",1,$(this).val());
-  													}
-  												});
-  												$('#submit_169').live('click', function(){
-  													window.id = "slider_169";
-  													filter(window.id);
-  												});
-  											});
-</script>
 
 </div>
-
-
-
 <a href="/catalog/cat/12" class="btn btn-mini btn-danger">Сбросить все фильтры</a>
 </div>
-
-</div><!-- /.sidebar -->
-
-<!-- mobile good list -->
-
-
-
-
+</div>
 </div>
 <div class="main_content col-lg-9 col-md-9 col-sm-12 col-xs-12">
-
 	<div class="span-12 content">
-
-
-
-
-
 		<div class="h1_holder span-12 no_margin 123123">
 			<h1>
 				Кабели                                                                            
 			</h1>
 		</div>
-		<div style="display:none"><!--categorr-->cat<!--/categorr--></div>
-
-
-
-
-
 		<div class="span-12 no_margin category_nav">
 			<div class="category_nav_sort">
 				<span>Сортировать:&nbsp;</span>
@@ -468,19 +386,7 @@
 					<a href="/cables/sort/popularity" class="sort_item">Популярности</a>
 					<a href="/cables" class="sort_item">Цене</a>
 				</div>
-
-				<script>
-				$('body').click(function() {
-					$('.sort_item').hide();
-				});
-				$('.sort_item_selected, .sort_item').on('click', function(e){
-					e.stopPropagation();
-					$('.sort_item').show();
-				});
-				</script>
-
 			</div>
-
 			<div class="switch_view">
 				<span>Вид</span>
 				<div class="list_as_block data-display" data-display="grid">
@@ -496,7 +402,6 @@
 					<span></span>
 				</div>                  
 			</div>
-
 			<div class="filter_params span-6">
 				<input id="check1" type="checkbox" name="check" value="check1">
 				<label data-filter-name="availability/1" for="check1">Только в наличии</label>
@@ -506,27 +411,20 @@
 
 				<input id="check3" type="checkbox" name="check" value="check1">
 				<label data-filter-name="sale/only" for="check3">Распродажа</label>
-
 			</div>
 		</div>
-
-
 	</div>
-
-
-
 	<div id="category_block_view_listing" class="row no_margin">
-		<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+    <!-- catalog list -->
+		<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
 			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
+				<div style="display:none">Кабель Sencor SAV 152-008</div>
 				<div class="prev_bonus" style="display:none;">
 					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
 				</div>
-
 				<div class="head">
 					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
 					<span class="description">Кабель</span>
-
 				</div>
 				<div class="image_holder">
 					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
@@ -536,22 +434,18 @@
 					alt="Кабель Sencor SAV 152-008 - catalog"/>
 				</a>
 			</div>
-
 			<div class="pr">
 				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
 				<div class="pri">
 					<span class="style_price">Цена:</span><br>
 					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
 				</div>
-
-
 				<span class="cat-item-buy">
 					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
 						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
 					</a>
 				</span>
 			</div>
-
 			<p class="cat-item-compare">
 				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
 					<i>в список сравнения</i>
@@ -559,251 +453,354 @@
 			</p>
 		</div>
 	</div>
+		
+    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
+    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-		<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
-			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
-				<div class="prev_bonus" style="display:none;">
-					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
-				</div>
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-				<div class="head">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
-					<span class="description">Кабель</span>
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-				</div>
-				<div class="image_holder">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
-					title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
-					<img itemprop="image" src="img/38345_s.jpg"
-					title="Кабель Sencor SAV 152-008"
-					alt="Кабель Sencor SAV 152-008 - catalog"/>
-				</a>
-			</div>
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-			<div class="pr">
-				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
-				<div class="pri">
-					<span class="style_price">Цена:</span><br>
-					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
-				</div>
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-				<span class="cat-item-buy">
-					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
-						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
-					</a>
-				</span>
-			</div>
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>
 
-			<p class="cat-item-compare">
-				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
-					<i>в список сравнения</i>
-				</span>
-			</p>
-		</div>
-	</div>
-
-			<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
-			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
-				<div class="prev_bonus" style="display:none;">
-					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
-				</div>
-
-				<div class="head">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
-					<span class="description">Кабель</span>
-
-				</div>
-				<div class="image_holder">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
-					title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
-					<img itemprop="image" src="img/38345_s.jpg"
-					title="Кабель Sencor SAV 152-008"
-					alt="Кабель Sencor SAV 152-008 - catalog"/>
-				</a>
-			</div>
-
-			<div class="pr">
-				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
-				<div class="pri">
-					<span class="style_price">Цена:</span><br>
-					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
-				</div>
-
-
-				<span class="cat-item-buy">
-					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
-						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
-					</a>
-				</span>
-			</div>
-
-			<p class="cat-item-compare">
-				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
-					<i>в список сравнения</i>
-				</span>
-			</p>
-		</div>
-	</div>
-
-			<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
-			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
-				<div class="prev_bonus" style="display:none;">
-					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
-				</div>
-
-				<div class="head">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
-					<span class="description">Кабель</span>
-
-				</div>
-				<div class="image_holder">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
-					title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
-					<img itemprop="image" src="img/38345_s.jpg"
-					title="Кабель Sencor SAV 152-008"
-					alt="Кабель Sencor SAV 152-008 - catalog"/>
-				</a>
-			</div>
-
-			<div class="pr">
-				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
-				<div class="pri">
-					<span class="style_price">Цена:</span><br>
-					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
-				</div>
-
-
-				<span class="cat-item-buy">
-					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
-						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
-					</a>
-				</span>
-			</div>
-
-			<p class="cat-item-compare">
-				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
-					<i>в список сравнения</i>
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-			<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
-			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
-				<div class="prev_bonus" style="display:none;">
-					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
-				</div>
-
-				<div class="head">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
-					<span class="description">Кабель</span>
-
-				</div>
-				<div class="image_holder">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
-					title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
-					<img itemprop="image" src="img/38345_s.jpg"
-					title="Кабель Sencor SAV 152-008"
-					alt="Кабель Sencor SAV 152-008 - catalog"/>
-				</a>
-			</div>
-
-			<div class="pr">
-				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
-				<div class="pri">
-					<span class="style_price">Цена:</span><br>
-					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
-				</div>
-
-
-				<span class="cat-item-buy">
-					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
-						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
-					</a>
-				</span>
-			</div>
-
-			<p class="cat-item-compare">
-				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
-					<i>в список сравнения</i>
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-			<div class="cl col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
-			<div class="category_block_view_item">
-				<div style="display:none"><!--cartdname-->Кабель Sencor SAV 152-008<!--/cartdname--></div>
-				<div class="prev_bonus" style="display:none;">
-					Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
-				</div>
-
-				<div class="head">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
-					<span class="description">Кабель</span>
-
-				</div>
-				<div class="image_holder">
-					<a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
-					title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
-					<img itemprop="image" src="img/38345_s.jpg"
-					title="Кабель Sencor SAV 152-008"
-					alt="Кабель Sencor SAV 152-008 - catalog"/>
-				</a>
-			</div>
-
-			<div class="pr">
-				<span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
-				<div class="pri">
-					<span class="style_price">Цена:</span><br>
-					<span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
-				</div>
-
-
-				<span class="cat-item-buy">
-					<a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
-						<i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
-					</a>
-				</span>
-			</div>
-
-			<p class="cat-item-compare">
-				<span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
-					<i>в список сравнения</i>
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 ">
+      <div class="category_block_view_item">
+        <div style="display:none">Кабель Sencor SAV 152-008</div>
+        <div class="prev_bonus" style="display:none;">
+          Купив Sencor SAV 152-008 у нас, Вы получаете +0грн на бонусный счет к цене! 
+        </div>
+        <div class="head">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008" onclick="onProductClickEcommerce(17742)">Sencor SAV 152-008</a>
+          <span class="description">Кабель</span>
+        </div>
+        <div class="image_holder">
+          <a href="http://elektronika.590.ua/cable/Sencor-SAV-152-008"
+          title="Sencor SAV 152-008" onclick="onProductClickEcommerce(17742)">
+          <img itemprop="image" src="img/38345_s.jpg"
+          title="Кабель Sencor SAV 152-008"
+          alt="Кабель Sencor SAV 152-008 - catalog"/>
+        </a>
+      </div>
+      <div class="pr">
+        <span class="full_description">SCART - кабель Sencor AV SAV 152-008. SCART M-SCART M 21P B SEN. Длина 0,8 м. Композитный сигнал.</span>
+        <div class="pri">
+          <span class="style_price">Цена:</span><br>
+          <span class="price_sidebar priceForEcommerce">18<span class="currency"> грн.</span></span>
+        </div>
+        <span class="cat-item-buy">
+          <a href="#data-basket" data-productErommerceId="17742" onclick="addToCart(17742)" data-toggle="modal" class="btn b btn-info data-AddToCart data-itemId-17742" >
+            <i class="icon-shopping-cart icon-white"></i> <span>Купить</span>
+          </a>
+        </span>
+      </div>
+      <p class="cat-item-compare">
+        <span id="comp_17742" data-id='17742' data-category='кабели' class="data-toggleCompare" data-url="img/38345_s.jpg">
+          <i>в список сравнения</i>
+        </span>
+      </p>
+    </div>
+  </div>      
 
 </div>
-
-
-
-
-
-
 </div>
 </div>
 </div> 
-<!-- end main content -->
-
-
 </div>
-
-
-
-
 <div class="list_inner">
 	        <ul class="nav">
           <li class="dropdown">
@@ -829,15 +826,8 @@
             </ul>
           </li>
         </ul>
-
 </div>
-
-
 </div> 
-
-
-
-
 <footer>
 	<div class="footer_menu">
 		<div class="subfooter">
@@ -872,7 +862,6 @@
 						<p class="currency-faq" id="currency-faq"><span class='strong'><span class="currency-faq-link">*</span> Цены в валюте указаны в качестве индикативных. Оплата товара производится в национальной валюте по курсу на день оплаты.</span></p>
 					</div>
 				</div>    
-
 				<div class="bbb">
 					<div class="top bt">
 						<div class="social_links social_links_bottom">
@@ -896,44 +885,25 @@
 							<img src="img/maestro.png" width="34px" height="12px" alt="visa">
 							<img src="img/master-card.png" width="34px" height="12px" alt="visa">
 						</div>
-
 					</div>
-
 					<div class="site_panel site_panel_bottom col-lg-12 col-md-12 col-sm-12 col-xs-12 bottom_panel">
 						<div class="site_panel_left_side left_side_bottom">
 							<a href="index.html" class="main_page_link">Главная</a>
 							<a href="http://590.ua/#login" class="autorization_link" data-toggle="modal">Авторизация</a>
 						</div>
 					</div> 
-
-
-
 				</div>
-
 			</div>
 		</footer>
 	</div> 
-
-
-
-
-
-
-
 	<script src="js/bootstrap-collapse.js"></script>
 	<script src="js/bootstrap-transition.js"></script>
 	<script src="js/bootstrap-tab.js"></script>
-
 	<script src="js/google-code-prettify/prettify.js"></script>
 	<script src="js/application.js"></script>    
 	<script src="js/bootstrap.min_1.js"></script>
 	<script src="js/jssor.slider-21.1.5.mini.js" type="text/javascript"></script>
 	<script src="js/owl.carousel.js"></script>
-
-	<script src="js/main.js"></script>
-
-
-
-
+	<script src="js/catalog.js"></script>
 </body>
 </html>

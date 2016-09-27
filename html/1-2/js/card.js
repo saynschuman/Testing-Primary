@@ -7,3 +7,4 @@ $('#com').click(function(){
 $('#gal').click(function(){
 	$('.gallerySimages').show();
 })
+

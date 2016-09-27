@@ -2337,24 +2337,7 @@ span.strong {
     text-align: center;
 }
 
-.cl {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 25px;
-    font-family: arial;
-    cursor: pointer;
-    transition: .5s;
-    color: #000;
-}
 
-.cl:hover {
-    opacity: .9;
-    transform: rotate(360deg);
-    transition: .5s;
-    color: red;
-    
-}
 
 .modal {
     position: fixed;
