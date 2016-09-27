@@ -280,7 +280,6 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: #0d8abc;
     font-size: 22px;
-    background: url(/assets/media/one_item_line_through.png) repeat-x 0 26px;
     height: 45px
 }
 
@@ -1471,7 +1470,7 @@
 .sale_complect_plus {
     width: 42px;
     height: 42px;
-    background: url(/assets/media/blue_plus.png)
+    background: url(../img/blue_plus.png)
 }
 
 .content .adsbygoogle {
@@ -1535,9 +1534,18 @@ body .guarantee-icon {
 .sale_complect_sum {
     width: 42px;
     height: 42px;
-    background: url(/assets/media/sum.png)
+    background: url(../img/sum.png)
 }
 
 .sale_complect_sum_block {
     width: 5%
+}
+
+
+@media only screen and (max-width: 1200px) {
+.sale_complect_plus_block {
+    display: -webkit-flex;
+    width: 10%
+}
+
 }
