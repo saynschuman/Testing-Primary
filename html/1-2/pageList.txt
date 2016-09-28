@@ -1,7 +1,0 @@
-// главная file:///home/vitaliy/go_it_course/hw/html/1-2/index.html
-// карточка товара file:///home/vitaliy/go_it_course/hw/html/1-2/card.html
-// акционные комплекты https://saynschuman.github.io/html/1-2/sets.html
-// страница каталога https://saynschuman.github.io/html/1-2/catalog.html
-//список сравнения (внизу страницы) (на странице каталога)
-статьи 
-почистить весь код

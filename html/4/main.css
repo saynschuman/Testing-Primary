@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.parent {
+	background: grey;
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.box1 {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	background: green;
+	/*z-index: 9;*/*
+}
+
+.box2 {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	background: #fff;
+}
+
+ul.menu {
+	margin: 30px;
+}
+
+.menu li {
+	float: left;
+	border: 1px solid;
+	margin: 0 20px;
+	list-style: none;
+	padding: 5px;
+}
+
+.menu a {
+	color: #000;
+}
+
+.active {
+	position: relative;
+	top: 25px;
+	left: 30px;
+
+}

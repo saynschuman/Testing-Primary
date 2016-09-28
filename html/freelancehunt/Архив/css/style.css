@@ -1,0 +1,146 @@
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+
+.clearfix {
+   zoom: 1;
+}
+
+.logo {
+    width: 155px;
+    height: 70px;
+    background: url(../img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.first_screen {
+	/*height: 900px;
+	background: url(../img/main_screen.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    transition: .5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgba(255,255,255,.5);
+    transition: .5s;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.img-responsive {
+	position: absolute;
+}
+
+.why {
+	background: #223f97;
+	height: auto;
+	width: 100%;
+}
+
+.why_title {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	padding: 40px 0;
+}
+
+.sec {
+	display: inline-block;
+}
+
+.section_1 img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.section_2 img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.section_3 img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.section_1 {
+	background: transparent;
+	height: auto;
+}
+
+.section_2 {
+	background: transparent;
+	height: auto;
+}
+
+.section_3 {
+	background: transparent;
+	height: auto;
+}
+
+.why_desc {
+	color: #fff;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 768px)  {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    border-color: transparent;
+	    background: rgba(255,255,255,.9);
+	    float: right;
+	    
+	}
+	.navbar-default .navbar-nav>li>a {
+	    color: #1E130D;
+	    text-align: right;
+	}
+	.navbar-default .navbar-nav>li>a:hover {
+	    color: rgba(0,0,0,.5);
+	}	
+}
