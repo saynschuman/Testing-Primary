@@ -9,15 +9,15 @@ $('.cl').click(function(){
 })
 
  $('.toggle_button').click(function(){
-  $('ul.mobile').slideToggle();
+  $('ul.mobile').slideToggle(300);
 });
 
  $('.cat_click').click(function(){
-  $('ul.sidebar').slideToggle();
+  $('ul.sidebar').slideToggle(300);
 });
 
  $('.show_more').click(function(){
- 	$('.more_inf').slideToggle();
+ 	$('.more_inf').slideToggle(300);
  });
 
  var one_item_left_width = $('.one_item_left').width();
