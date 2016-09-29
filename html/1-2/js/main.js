@@ -20,6 +20,9 @@ $('.cl').click(function(){
  	$('.more_inf').slideToggle();
  });
 
+ var one_item_left_width = $('.one_item_left').width();
+ $('.one_item_prev_imgs').width(one_item_left_width);
+
 
             
             var jssor_1_options = {

@@ -1,10 +1,29 @@
-$('#fields').addClass('active in');
+jQuery(document).ready(function ($) {
 
-$('#com').click(function(){
-	$('.gallerySimages').hide();
-})
+	$('#fields').addClass('active in');
 
-$('#gal').click(function(){
-	$('.gallerySimages').show();
-})
+	$('#com').click(function(){
+		$('.gallerySimages').hide();
+	})
 
+	$('#gal').click(function(){
+		$('.gallerySimages').show();
+	})
+
+	var one_item_left_width = $('.one_item_left').width();
+	$('.one_item_prev_imgs').width(one_item_left_width);
+
+
+
+});
+
+$(document).ready(function() {
+	$("#owl-demo").owlCarousel({
+		navigation : true
+	});
+});
+
+	$(window).resize(function(){
+		var one_item_left_width = $('.one_item_left').width();
+		$('.one_item_prev_imgs').width(one_item_left_width);
+	});
