@@ -1,3 +1,7 @@
+.mobile_img_s {
+    display: none;
+}
+
 .owl-carousel {
     display: none;
     position: relative;
@@ -2043,6 +2047,17 @@ body .modal #pap-club {
 @media only screen and (max-width: 767px) {
 .owl-carousel {
     width: 100%;
+}
+.mobile_img_s {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mob_img_s {
+    width: 56px;
+    margin: 10px auto;
+    
 }
 }
 
