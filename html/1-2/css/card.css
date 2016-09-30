@@ -2059,6 +2059,9 @@ body .modal #pap-club {
     margin: 10px auto;
     
 }
+.one_item_prev_imgs {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 510px) {
@@ -2071,11 +2074,11 @@ body .modal #pap-club {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
+.mobile_img_s {
+    width: 80%;
+}
 
-    .one_item_prev_imgs {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 350px) {
