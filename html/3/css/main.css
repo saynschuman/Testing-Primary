@@ -1,1 +1,22 @@
-main.css
+.main-title {
+    text-align: center;
+    height: 200px;
+    padding: 40px 0;
+}
+
+.teacher-name {
+	text-align: center;
+}
+
+.descr {
+	text-align: justify;
+	padding: 0 0 20px 0;
+}
+
+body {
+	/*background: radial-gradient(#fff, #eee 100%);*/
+}
+
+.wr {
+	background: transparent;
+}
