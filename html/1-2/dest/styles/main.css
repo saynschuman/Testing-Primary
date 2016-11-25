@@ -37,7 +37,7 @@ a:hover {
 a {
   transition: .5s; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
     width: 1300px; } }
 /*header*/
@@ -174,12 +174,14 @@ footer {
       width: 105px;
       font-size: 23px;
       font-weight: 600; }
-  footer table tr td {
-    height: 94px;
-    width: 94px;
-    background-color: #fff;
-    border: 13px solid #06223f;
-    border-right: none; }
+  footer table {
+    margin-right: -13px;
+    margin-top: -16px; }
+    footer table tr td {
+      height: 94px;
+      width: 94px;
+      background-color: #fff;
+      border: 13px solid #06223f; }
   footer ul li {
     font-size: 25px;
     color: #fff;
@@ -194,7 +196,7 @@ footer {
       margin-right: -39px; }
     footer ul li .img2 {
       background-image: url(../../img/sprite_4.png);
-      background-position: 0px 30px;
+      background-position: 0px 120px;
       width: 35px;
       height: 30px;
       margin-top: -38px;
@@ -208,7 +210,7 @@ footer {
       margin-right: -39px; }
     footer ul li .img4 {
       background-image: url(../../img/sprite_4.png);
-      background-position: 0px 120px;
+      background-position: 0px 30px;
       width: 35px;
       height: 30px;
       position: absolute;
@@ -221,7 +223,7 @@ footer {
   footer .col {
     min-height: 280px; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1360px) {
   .left_button,
   .language,
   .img_nav_before {

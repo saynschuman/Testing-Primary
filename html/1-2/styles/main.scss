@@ -81,7 +81,7 @@ a {
 	transition: .5s;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 	.container {
 	    width: 1300px;
 	}
@@ -259,12 +259,15 @@ footer {
        }
     }
   }
-  table tr td {
-    height: 94px;
-    width: 94px;
-    background-color: #fff;
-    border: 13px solid #06223f;
-    border-right: none;
+  table {
+    margin-right: -13px;
+    margin-top: -16px;
+    tr td {
+      height: 94px;
+      width: 94px;
+      background-color: #fff;
+      border: 13px solid #06223f;
+    }
   }
   ul li {
     font-size: 25px;
@@ -281,7 +284,8 @@ footer {
     }
     .img2 {
       background-image: $icons;
-      background-position: ($icon-width * 0) ($icon-height * 1);
+      background-position: ($icon-width * 0) ($icon-height * 4);
+      
       width: $icon-width;
       height: $icon-height;
       margin-top: -38px;
@@ -298,7 +302,7 @@ footer {
     }
     .img4 {
       background-image: $icons;
-      background-position: ($icon-width * 0) ($icon-height * 4);
+      background-position: ($icon-width * 0) ($icon-height * 1);
       width: $icon-width;
       height: $icon-height;
       position: absolute;
@@ -319,7 +323,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1360px) {
   .left_button,
   .language,
   .img_nav_before {
