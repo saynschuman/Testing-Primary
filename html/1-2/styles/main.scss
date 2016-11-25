@@ -17,7 +17,7 @@ $menuColorBlue: #3b8ddf;
 
 $icon-width: 35px;
 $icon-height: 30px;
-$icons: url('../../sprite_4.png');
+$icons: url(../../img/sprite_4.png);
 
 /*font sources*/
 
@@ -174,9 +174,9 @@ a {
 // main screen
 
 .main_screen {
-  height: 715px;
+  height: 482px;
   width: 100%;
-  background-image: url(../../img/slide.jpg);
+  background-image: url(../../img/slide_2.png);
 }
 
 // article
@@ -186,7 +186,7 @@ a {
     color: #1a5fa5;
     font-size: 67.04px;
     text-align: center;
-    margin-top: 39px;
+    margin-top: 90px;
     margin-bottom: 56px;
   }
 
@@ -211,57 +211,110 @@ a {
     color: #8dc503;
     font-weight: 600;
   }
+  .column {
+    padding-bottom: 48px;
+  }
 
 }
 
 footer {
   background-color: #06223f;
-  padding: 20px 0;
+  padding: 52px 0;
   .title {
     color: #8ac10a;
     font-size: 29.17px;
+    font-weight: 600;
+    padding-bottom: 10px; 
   }
   .divider {
     height: 2px;
     width: 109px;
     background-color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
   form {
     input {
-      display: block;
-      padding: 1px 4px;
-       @include border-radius(3px);
-       border: none;
-       margin-bottom: 10px;
+    display: block;
+    padding: 4px 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 19px;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    font-size: 19.32px;
+    @include border-radius(3px);
        &[type="submit"] {
         color: #003d71;
-        padding: 0 10px;
+        padding: 0px 14px;
+        width: 105px;
+        font-size: 23px;
+        font-weight: 600;
        }
     }
   }
   table tr td {
-    height: 84px;
-    width: 84px;
+    height: 94px;
+    width: 94px;
     background-color: #fff;
     border: 13px solid #06223f;
-    &:first-child {
-      border-right: none;
-    }
-    &:nth-child(2) {
-      border-left: none;
-    }    
+    border-right: none;
   }
   ul li {
     font-size: 25px;
     color: #fff;
     list-style: none;
+    height: 46px;
     .img1 {
       background-image: $icons;
-      background-position: -($icon-width * 5) -($icon-height * 1);
+      background-position: ($icon-width * 0) ($icon-height * 0);
       width: $icon-width;
       height: $icon-height;
+      margin-top: -38px;
+      margin-right: -39px;
     }
+    .img2 {
+      background-image: $icons;
+      background-position: ($icon-width * 0) ($icon-height * 1);
+      width: $icon-width;
+      height: $icon-height;
+      margin-top: -38px;
+      margin-right: -39px;
+      
+    }
+    .img3 {
+      background-image: $icons;
+      background-position: ($icon-width * 0) ($icon-height * 2.5);
+      width: $icon-width;
+      height: $icon-height;
+      margin-top: -38px;
+      margin-right: -39px;
+    }
+    .img4 {
+      background-image: $icons;
+      background-position: ($icon-width * 0) ($icon-height * 4);
+      width: $icon-width;
+      height: $icon-height;
+      position: absolute;
+      margin-right: -39px;
+      
+    }    
+  }
+  .ul_simple {
+    padding: 0;
+    margin-top: -13px;
+    li {
+      height: 29px;
+    }
+  }
+  .col {
+    min-height: 280px;
   }
 }
 
