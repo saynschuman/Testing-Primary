@@ -81,7 +81,7 @@ a {
 	transition: .5s;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1355px) {
 	.container {
 	    width: 1300px;
 	}
@@ -318,12 +318,12 @@ footer {
     }
   }
   .col {
-    min-height: 280px;
+    min-height: 325px;
   }
 }
 
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1300px) {
   .left_button,
   .language,
   .img_nav_before {
