@@ -15,6 +15,10 @@ $menuColorBlue: #3b8ddf;
           border-radius: $radius;
 }
 
+$icon-width: 35px;
+$icon-height: 30px;
+$icons: url('../../sprite_4.png');
+
 /*font sources*/
 
 
@@ -212,6 +216,7 @@ a {
 
 footer {
   background-color: #06223f;
+  padding: 20px 0;
   .title {
     color: #8ac10a;
     font-size: 29.17px;
@@ -220,13 +225,42 @@ footer {
     height: 2px;
     width: 109px;
     background-color: #fff;
+    margin-bottom: 30px;
   }
   form {
     input {
       display: block;
+      padding: 1px 4px;
        @include border-radius(3px);
        border: none;
        margin-bottom: 10px;
+       &[type="submit"] {
+        color: #003d71;
+        padding: 0 10px;
+       }
+    }
+  }
+  table tr td {
+    height: 84px;
+    width: 84px;
+    background-color: #fff;
+    border: 13px solid #06223f;
+    &:first-child {
+      border-right: none;
+    }
+    &:nth-child(2) {
+      border-left: none;
+    }    
+  }
+  ul li {
+    font-size: 25px;
+    color: #fff;
+    list-style: none;
+    .img1 {
+      background-image: $icons;
+      background-position: -($icon-width * 5) -($icon-height * 1);
+      width: $icon-width;
+      height: $icon-height;
     }
   }
 }
