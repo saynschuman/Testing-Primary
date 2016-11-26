@@ -5,6 +5,7 @@ $almony200: almoni-tzar-200;
 $almony300: almoni-tzar-300;
 $almony400: almoni-tzar-400;
 $almony700: almoni-tzar-700;
+$mainText: #3d4042;
 
 $menuColorBlue: #3b8ddf;
 
@@ -75,6 +76,7 @@ body {
 
 a:hover {
 	transition: .5s;
+  text-decoration: none;
 }
 
 a {
@@ -168,6 +170,9 @@ a {
 }
 
 // main
+
+// content_page_1
+
 .content_page_1 {
 
   .main_screen {
@@ -188,7 +193,7 @@ a {
     .article_description {
       text-align: center;
       font-size: 34.3px;
-      color: #3d4042;
+      color: $mainText;
       line-height: 41px;
       margin-bottom: 60px;
       font-family: $almony400;
@@ -196,7 +201,7 @@ a {
 
     .column p {
       font-size: 25px;
-      color: #3d4042; 
+      color: $mainText; 
       font-weight: 600;
       line-height: 35px;
     }
@@ -209,9 +214,74 @@ a {
     .column {
       padding-bottom: 48px;
     }
-
   }
-  
+}
+
+// articles
+
+.articles {
+  .main_screen {
+    height: 482px;
+    width: 100%;
+    background-image: url(../../img/articles/44.png);
+  }   
+  .articles_title {
+    color: #1a5fa5;
+    font-size: 67.04px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 56px;
+  }  
+  article {
+    &:last-child {
+      margin-bottom: 108px;
+      .divider {
+        display: none;
+      }
+    }
+    .title {
+      font-size: 33.33px;
+      color: $mainText;
+      font-weight: 600;
+    }
+    .thumbnail {
+      float: right;
+      margin-left: 45px;
+      border: none;
+      padding: 8px 19px 0 0;
+    }
+    .excerpt {
+      font-size: 25px;
+      color: $mainText; 
+    }
+    .read_more {
+      color: #8dc503;
+      font-size: 33.33px;
+    }
+    .info {
+      font-size: 25px;
+      color: $mainText;
+      span {
+        padding: 0 10px;
+      }
+    }
+    .comments,
+    .author {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .author,
+    .date {
+      border-left: 1px solid $mainText;
+      white-space: nowrap;
+    }
+    .divider {
+      height: 2px;
+      width: 100%;
+      background-color: #b7b7b7;
+      margin: 56px 20px;
+    }    
+  }
 }
 
 footer {
@@ -403,6 +473,26 @@ footer {
      margin-bottom: 25px !important; 
    }
  }
+ .thumbnail {
+    float: none !important;
+    margin-left: 0 !important;
+ }
 
 }
 
+
+
+@media only screen and (max-width: 480px) {
+  .comments,
+  .author,
+  .date {
+    display: block !important;
+    border: none  !important;
+  } 
+  .thumbnail {
+    float: none !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+}

@@ -32,7 +32,8 @@ body {
   font-family: almoni-tzar-300, sans-serif; }
 
 a:hover {
-  transition: .5s; }
+  transition: .5s;
+  text-decoration: none; }
 
 a {
   transition: .5s; }
@@ -130,6 +131,54 @@ a {
   font-weight: 600; }
 .content_page_1 .article_1 .column {
   padding-bottom: 48px; }
+
+.articles .main_screen {
+  height: 482px;
+  width: 100%;
+  background-image: url(../../img/articles/44.png); }
+.articles .articles_title {
+  color: #1a5fa5;
+  font-size: 67.04px;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 56px; }
+.articles article:last-child {
+  margin-bottom: 108px; }
+  .articles article:last-child .divider {
+    display: none; }
+.articles article .title {
+  font-size: 33.33px;
+  color: #3d4042;
+  font-weight: 600; }
+.articles article .thumbnail {
+  float: right;
+  margin-left: 45px;
+  border: none;
+  padding: 8px 19px 0 0; }
+.articles article .excerpt {
+  font-size: 25px;
+  color: #3d4042; }
+.articles article .read_more {
+  color: #8dc503;
+  font-size: 33.33px; }
+.articles article .info {
+  font-size: 25px;
+  color: #3d4042; }
+  .articles article .info span {
+    padding: 0 10px; }
+.articles article .comments,
+.articles article .author {
+  font-weight: 600;
+  white-space: nowrap; }
+.articles article .author,
+.articles article .date {
+  border-left: 1px solid #3d4042;
+  white-space: nowrap; }
+.articles article .divider {
+  height: 2px;
+  width: 100%;
+  background-color: #b7b7b7;
+  margin: 56px 20px; }
 
 footer {
   background-color: #06223f;
@@ -276,6 +325,21 @@ footer {
     min-height: auto !important;
     margin-bottom: 10px !important; }
   footer .last {
-    margin-bottom: 25px !important; } }
+    margin-bottom: 25px !important; }
+
+  .thumbnail {
+    float: none !important;
+    margin-left: 0 !important; } }
+@media only screen and (max-width: 480px) {
+  .comments,
+  .author,
+  .date {
+    display: block !important;
+    border: none  !important; }
+
+  .thumbnail {
+    float: none !important;
+    margin-left: 0 !important;
+    width: 100% !important; } }
 
 /*# sourceMappingURL=main.css.map */
