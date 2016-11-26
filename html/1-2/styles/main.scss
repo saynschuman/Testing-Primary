@@ -328,14 +328,78 @@ footer {
   .language,
   .img_nav_before {
     display: none !important;
-  } 
+  }
+  footer ul li {
+      font-size: 17px !important;
+      .img1, .img2, .img3 {
+        margin-top: -31px !important;
+        margin-right: -41px !important;
+      }
+      .img4 {
+        margin-top: -9px !important;
+      }
+  }   
 }
+
+
+@media only screen and (max-width: 991px) {
+  footer ul li {
+    font-size: 25px !important;
+    .img1 {
+      background-image: $icons !important;
+      background-position: ($icon-width * 0) ($icon-height * 0) !important;
+      width: $icon-width !important;
+      height: $icon-height !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important;
+    }
+    .img2 {
+      background-image: $icons !important;
+      background-position: ($icon-width * 0) ($icon-height * 4) !important;
+      
+      width: $icon-width !important;
+      height: $icon-height !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important;
+      
+    }
+    .img3 {
+      background-image: $icons !important;
+      background-position: ($icon-width * 0) ($icon-height * 2.5) !important;
+      width: $icon-width !important;
+      height: $icon-height !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important;
+    }
+    .img4 {
+      background-image: $icons !important;
+      background-position: ($icon-width * 0) ($icon-height * 1) !important;
+      width: $icon-width !important;
+      height: $icon-height !important;
+      position: absolute !important;
+      margin-right: -39px !important;
+      margin-top: -3px !important;
+      
+    }   
+  }  
+}
+
 
 
 @media only screen and (max-width: 769px) {
   .navbar-default .navbar-toggle {
       margin-top: 25px;
   }  
+  footer {
+    .col {
+      height: auto !important;
+      min-height: auto !important;
+      margin-bottom: 10px !important;
+    }
+    .last {
+     margin-bottom: 25px !important; 
+    }
+  }
 
 }
 

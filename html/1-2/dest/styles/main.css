@@ -227,9 +227,56 @@ footer {
   .left_button,
   .language,
   .img_nav_before {
-    display: none !important; } }
+    display: none !important; }
+
+  footer ul li {
+    font-size: 17px !important; }
+    footer ul li .img1, footer ul li .img2, footer ul li .img3 {
+      margin-top: -31px !important;
+      margin-right: -41px !important; }
+    footer ul li .img4 {
+      margin-top: -9px !important; } }
+@media only screen and (max-width: 991px) {
+  footer ul li {
+    font-size: 25px !important; }
+    footer ul li .img1 {
+      background-image: url(../../img/sprite_4.png) !important;
+      background-position: 0px 0px !important;
+      width: 35px !important;
+      height: 30px !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important; }
+    footer ul li .img2 {
+      background-image: url(../../img/sprite_4.png) !important;
+      background-position: 0px 120px !important;
+      width: 35px !important;
+      height: 30px !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important; }
+    footer ul li .img3 {
+      background-image: url(../../img/sprite_4.png) !important;
+      background-position: 0px 75px !important;
+      width: 35px !important;
+      height: 30px !important;
+      margin-top: -38px !important;
+      margin-right: -39px !important; }
+    footer ul li .img4 {
+      background-image: url(../../img/sprite_4.png) !important;
+      background-position: 0px 30px !important;
+      width: 35px !important;
+      height: 30px !important;
+      position: absolute !important;
+      margin-right: -39px !important;
+      margin-top: -3px !important; } }
 @media only screen and (max-width: 769px) {
   .navbar-default .navbar-toggle {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  footer .col {
+    height: auto !important;
+    min-height: auto !important;
+    margin-bottom: 10px !important; }
+  footer .last {
+    margin-bottom: 25px !important; } }
 
 /*# sourceMappingURL=main.css.map */
