@@ -37,9 +37,6 @@ a:hover {
 a {
   transition: .5s; }
 
-@media (min-width: 1355px) {
-  .container {
-    width: 1300px; } }
 /*header*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent; }
@@ -105,34 +102,33 @@ a {
 .language {
   margin-top: -10px; }
 
-.main_screen {
+.content_page_1 .main_screen {
   height: 482px;
   width: 100%;
   background-image: url(../../img/slide_2.png); }
-
-.article_1 .article_title {
+.content_page_1 .article_1 .article_title {
   color: #1a5fa5;
   font-size: 67.04px;
   text-align: center;
   margin-top: 90px;
   margin-bottom: 56px; }
-.article_1 .article_description {
+.content_page_1 .article_1 .article_description {
   text-align: center;
   font-size: 34.3px;
   color: #3d4042;
   line-height: 41px;
   margin-bottom: 60px;
   font-family: almoni-tzar-400; }
-.article_1 .column p {
+.content_page_1 .article_1 .column p {
   font-size: 25px;
   color: #3d4042;
   font-weight: 600;
   line-height: 35px; }
-.article_1 .column_title {
+.content_page_1 .article_1 .column_title {
   font-size: 33.3px;
   color: #8dc503;
   font-weight: 600; }
-.article_1 .column {
+.content_page_1 .article_1 .column {
   padding-bottom: 48px; }
 
 footer {
@@ -223,6 +219,9 @@ footer {
   footer .col {
     min-height: 325px; }
 
+@media (min-width: 1355px) {
+  .container {
+    width: 1300px; } }
 @media only screen and (max-width: 1300px) {
   .left_button,
   .language,
